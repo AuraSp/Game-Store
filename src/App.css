@@ -1,0 +1,395 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/*----- HEADER SECTIION -----*/
+.d-flex {
+  /* Header */
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5em;
+  color: white;
+  background-image: url(https://images.alphacoders.com/743/thumb-1920-74381.JPG);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.left-nav,
+.right-nav {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  margin-top: 5em;
+}
+
+.left-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 60%;
+}
+
+.store-logo img {
+  /* Store Logo */
+  max-width: 130px;
+  height: auto;
+  object-fit: cover;
+}
+
+.left-nav ul {
+  display: inline-flex;
+  list-style-type: none;
+  padding: 1em;
+  margin: 0;
+  border-bottom: 1px solid white;
+
+}
+
+.left-nav ul li {
+  padding: 0.5em;
+  font-size: 1.5em;
+  transition: 500ms ease-in-out;
+}
+
+.left-nav li:hover {
+  border-radius: 15px;
+  box-shadow: 0 50px 10px #af83318e inset;
+}
+
+.right-nav {
+  /* Headers' second part */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-basis: 40%;
+}
+
+.regBtns {
+  display: inline-flex;
+}
+
+.right-nav > ul:nth-child(1) {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  margin: 0 5em;
+  padding: 1em;
+  border-bottom: 1px solid white;
+} 
+
+.right-nav ul li {
+  border-radius: 20px;
+  background-color: black;
+  padding: 0.8em;
+  margin: 0.1em;
+  font-size: 1em;
+  transition: 500ms ease-in-out;
+}
+
+.right-nav ul li:hover {
+  box-shadow: 0 50px 10px #af83318e inset;
+  cursor: pointer;
+} 
+
+.right-nav a,
+.left-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.right-nav .language-menu {
+  display: none;
+  position: absolute;
+  padding: 1rem;
+  margin-top: 0.5em;
+  margin-left: -2.5em;
+  transition: all 0.5s ease;
+  min-width: 180px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.right-nav > ul li:hover > .language-menu {
+  display: block;
+}
+
+/*----- HEADER SECTIION END -----*/
+/*----- MAIN SECTIION -----*/
+
+/* ! ---------Section 4 properties--------  */
+
+/* ! ------color for 4 container----- */
+:root {
+  --text: #677381;
+  --link: white;
+  --button-bg: #459e1a;
+  --button-text: #00ff19;
+  --button-text-hover: #bcf005;
+  --section-background: black;
+}
+
+.container-4-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  background-color: var(--section-background);
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-family: Helvetica;
+}
+
+/* --- Item-1 div --- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .item-1-top-h1,
+  .item-1-top-p {
+    text-align: center;
+  }
+}
+
+.item-1-top {
+  flex-grow: 2;
+}
+
+.item-1-top-h1 {
+  margin-top: 0.5em;
+  background-color: var(--section-background);
+}
+
+.item-1-top-p,
+.item-2-bottom-p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.item-1-top,
+.item-2-bottom-p {
+  color: var(--text);
+}
+
+/* --- Item-2 div --- */
+
+.item-2-bottom {
+  flex-grow: 2;
+  text-align: center;
+}
+
+.item-2-bottom button {
+  margin-top: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.item-2-bottom-p a {
+  color: var(--link);
+}
+
+.log-in-btn {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  margin: 2px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.log-in-btn:hover {
+  background-color: var(--button-text-hover);
+  color: var(--link);
+}
+
+.item-2-bottom-p a {
+  text-decoration: none;
+}
+
+/*----- FOOTER -----*/
+
+
+.mainFooter {
+  background-image: url(https://images.alphacoders.com/743/thumb-1920-74381.JPG);
+  background-position: center;
+  background-attachment: fixed;
+}
+.FAQ {
+  margin: 0 250px;
+  padding-bottom: 3px;
+  background-color: rgba(245, 245, 245, 0.685);
+  border-radius: 15px;
+}
+.FAQ p {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.FAQ > p:nth-child(2) {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: .8em;
+}
+.FAQ h1 {
+  text-align: center;
+  font-size: 24px;
+  padding: .3em;
+}
+
+.FAQ h4 {
+  text-align: center;
+  border-bottom: 2px solid rgba(34, 34, 34, 0.144);
+  padding-bottom: 3px;
+}
+
+.faqQuestions {
+  display: block;
+  padding-left: 10px;
+  font-weight: bold;
+  cursor:pointer;
+  margin: 0.5em 0 0 1em;
+  padding: 0.2em;
+  width: 50%;
+}
+
+/* Form display */
+.display-none {
+  display: none;
+}
+
+.display-first {
+  display: flex;
+  flex-flow: column nowrap;
+  animation:out 0.4s ease-in-out;
+}
+
+@keyframes out {
+  0% {
+    transform: translatey(-50%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0)
+  }
+}
+
+
+footer form{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-content: flex-start;
+  margin-left: 3em;
+}
+
+.FAQ a {
+  text-decoration: none;
+  color: black;
+}
+
+.FAQ p:hover {
+  background-color: rgba(34, 34, 34, 0.337);
+  border-radius: 15px;
+}
+
+/* Inside form elements */
+.closeFormBtn {
+  display: block;
+  width: 50px;
+  position: relative;
+  transform: translate(-8vw, 2vh);
+  padding: 0.3em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  color:white;
+  background-color: #181d33;
+  cursor: pointer;
+}
+
+footer input[type='text'] { /* Account username, Topic */
+  padding: 1em;
+  font-size: 0.9em;
+  border: none;
+  border-bottom: 1px solid #525252;
+  border-radius: 10px;
+  color: #000;
+  background-color: transparent;
+}
+
+::placeholder {
+  text-align: center;
+  color: black;
+}
+
+footer input:hover, #question:hover {
+  background-color: darkgrey;
+}
+
+#question { /* Question area */
+  padding: 1em;
+  font-size: 1.2em;
+  width: 350px;
+  border: none;
+  border-bottom: 1px solid #525252;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+footer input[type='submit'] {
+  position: relative;
+  transform: translate(80%, 0);
+  width: 100px;
+  margin: 0.8em;
+  padding: 0.5em;
+  font-size: 1em;
+  border: none;
+  border-radius: 100px;
+  color:white;
+  background-color: #181d33;
+  cursor: pointer;
+}
+
+.closeFormBtn:hover, input[type='submit']:hover{
+  background-color: #383c50;
+}
+
+footer img {
+  border: 3px solid #ddd;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.logo-end {
+  padding-top: 50px;
+  background-color: rgba(245, 245, 245, 0.685);
+}
+
+.endFooter {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  height: 10vh;
+}
+.logo {
+  float: left;
+  padding-left: 150px;
+}
+.item2 img{
+  border-radius: 0;
+  border: none;
+  width: 100%;
+}
+.bigItem3Img img{
+  border-radius: 0;
+  border: none;
+  width: 60%;
+}

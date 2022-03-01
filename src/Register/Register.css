@@ -1,0 +1,108 @@
+:root {
+  --main-background: #222222e8;
+  --text: #ffffff;
+  --input-background: #414a4a;
+}
+
+/* ! Main form */
+body {
+  background-image: url(https://images.alphacoders.com/743/thumb-1920-74381.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.registerPage {
+  background-color: var(--main-background);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: flex;
+  flex-flow: column;
+  justify-content:center;
+  align-content: center;
+}
+
+.form-h3 {
+  font-weight: lighter;
+  margin-bottom: 2em;
+}
+
+.main-label,
+.main-select-label {
+  font-size: 0.8rem;
+  padding: .6em;
+}
+
+.main-input,
+.main-select {
+  width: 17.7rem;
+  height: 2.4rem;
+  border-radius: 15px;
+  background-color: var(--input-background);
+}
+
+input,
+select {
+  color: var(--text);
+}
+
+.btn-form {
+  padding: 1em;
+  margin-top: 1em;
+  background-color: var(--input-background);
+  color: var(--text);
+  border: none;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.btn-form:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}
+
+.form-h3,
+label,
+button {
+  color: var(--text);
+}
+
+input,
+select {
+  background: var(--input-background);
+  border: none;
+}
+
+input:hover {
+  filter: brightness(85%);
+}
+
+.label-bottom {
+  width: 70%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.bottom-links {
+  color: rgba(252, 252, 252, 0.788);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.bottom-links:hover {
+  color: black;
+}
+
+.errs {
+  text-align: center;
+  color: white;
+}
