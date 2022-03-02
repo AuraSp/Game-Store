@@ -121,12 +121,12 @@
 
 /* ! ------color for 4 container----- */
 :root {
-  --text: #677381;
+/*   --text: #677381;
   --link: white;
   --button-bg: #459e1a;
   --button-text: #00ff19;
   --button-text-hover: #bcf005;
-  --section-background: black;
+  --section-background: black; */
 }
 
 .container-4-flex {
