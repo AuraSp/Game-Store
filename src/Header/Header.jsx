@@ -1,9 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Header = (props) => {
-
-  let [currentPage ,setCurrentPage] = useState("main")
-
 
   function paging(page){
     props.setPage(page)
@@ -21,6 +18,7 @@ const Header = (props) => {
       </ul>
     </nav>
     <nav class="right-nav">
+      {props.user.displayName == undefined ? 
       <ul>
         <div class="regBtns">
           <a href="#" onClick={(e) => {
@@ -47,7 +45,7 @@ const Header = (props) => {
             </ul>
           </li>
         </a>
-      </ul>
+      </ul>: <h3>{props.user.displayName} <button>Logout</button></h3>}
     </nav>
   </header>
   )

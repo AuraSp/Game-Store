@@ -1,34 +1,82 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './Footer.css';
 
 const Footer = () => {
+
+  let [openedFAQ, setOpenedFAQ] = useState([]);
+  let tempOpenedFAQ = []
+
+
+  function transitionFAQFirst() {
+    document.querySelector('.question').classList.add('display-first');
+  };
+
+  function closeForm(){
+    document.querySelector('.question').classList.remove('display-first');
+  }
+
+
+  function openFAQ(faq){
+      document.querySelector(`.${faq}`).classList.add('display-first');
+  }
+  function closeFAQ(faq){
+    document.querySelector(`.${faq}`).classList.remove('display-first');
+  }
   return (
     <footer>
     <div class="mainFooter">
       <div class="FAQ">
         <h1>Frequently Asked Questions (FAQ)</h1>
 
-        <p class='faqQuestions' onclick='transitionFAQFirst()'>I received my game(s) as a gift, will I gain access to
+        <p class='faqQuestions' onClick={(e) => {openFAQ("first")}}>I received my game(s) as a gift, will I gain access to
           all
           features?
         </p>
+        <div class="display-none first">
+          <div className='fullWidthQuestionBtn'>
+            <div class="closeFormBtn" onClick={(e) => {closeFAQ("first")}}>&times;</div>
+          </div>
+          <p>EDGARAI ATSAKYK I KLAUSIMUS, THANKS</p>
+        </div>
 
-        <p class='faqQuestions' onclick='transitionFAQSecond()'>How will know that I added exactly $5.00 USD to my
+        <p class='faqQuestions' onClick={(e) => {openFAQ("second")}}>How will know that I added exactly $5.00 USD to my
           Wallet?
         </p>
+        <div class="display-none second">
+        <div className='fullWidthQuestionBtn'>
+          <div class="closeFormBtn" onClick={(e) => {closeFAQ("second")}}>&times;</div></div>
+          <p>EDGARAI ATSAKYK I KLAUSIMUS, THANKS</p>
+        </div>
 
-        <p class='faqQuestions' onclick='transitionFAQThird()'>I recently added Wallet funds but they have not appeared,
+        <p class='faqQuestions' onClick={(e) => {openFAQ("third")}}>I recently added Wallet funds but they have not appeared,
           what do
           I do?</p>
+        <div class="display-none third">
+        <div className='fullWidthQuestionBtn'>
+          <div class="closeFormBtn" onClick={(e) => {closeFAQ("third")}}>&times;</div></div>
+          <p>EDGARAI ATSAKYK I KLAUSIMUS, THANKS</p>
+        </div>
 
-        <p class='faqQuestions' onclick='transitionFAQFourth()'>What kind of Steam Wallet and item listing restrictions
+        <p class='faqQuestions' onClick={(e) => {openFAQ("fourth")}}>What kind of Steam Wallet and item listing restrictions
           apply?
         </p>
-      </div>
+        <div class="display-none fourth">
+        <div className='fullWidthQuestionBtn'>
+          <div class="closeFormBtn" onClick={(e) => {closeFAQ("fourth")}}>&times;</div></div>
+          <p>EDGARAI ATSAKYK I KLAUSIMUS, THANKS</p>
+        </div>
 
-      <div class="logo-end">
-        <div class="logo"><img src="../img/LOGO.png" alt="logo" /></div>
-        <div class='display-none'>
-          <div class='closeFormBtn' type='button'>&times;</div>
+
+
+
+        <button className='questionButton' onClick={(e) =>{
+          transitionFAQFirst()
+        }}>Ask us a question!</button>
+        <div class='display-none question'>
+        <div className='fullWidthQuestionBtn'>
+          <div class='closeFormBtn' type='button' onClick={(e)=>{
+            closeForm();
+          }}>&times;</div></div>
           <form>
             <label for="username"></label>
             <input type="text" id="username" name="username" placeholder="Account username..."/>
@@ -39,6 +87,10 @@ const Footer = () => {
             <input type="submit" value="&rarr;"/>
           </form>
         </div>
+      </div>
+
+      <div class="logo-end">
+        <div class="logo"><img src="../img/LOGO.png" alt="logo" /></div>
         <div class="endFooter">
           <p>
             © 2022 Internetinė žaidimų parduotuvė. All rights reserved. All

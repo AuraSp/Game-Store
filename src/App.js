@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import './CSS/main_part_one_style.css';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
@@ -11,6 +10,7 @@ import Register from './Register/Register';
 
 function App() {
   let [page, setPage] = useState("main")
+  let [currentUser, setCurrentUser] = useState(0);
   
 
   console.log(page)
@@ -19,13 +19,18 @@ function App() {
     setPage(page)
     console.log(page);
   }
+
+  function setUser(userCredential){
+    console.log(userCredential);
+    setCurrentUser(userCredential)
+  }
   return (
     <div className="App">
-      <Header setPage = {changePage}/>
+      <Header setPage = {changePage} user={currentUser}/>
 
       {page == "main" && <Main/>}
-      {page == "login" && <Login/>}
-      {page == "register" && <Register/>}
+      {page == "login" && <Login setPage = {changePage} setUser = {setUser}/>}
+      {page == "register" && <Register setPage = {changePage} setUser = {setUser}/>}
       {/* <Footer/> */}
       <Footer/>
     </div>
