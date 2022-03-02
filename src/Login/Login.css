@@ -21,7 +21,7 @@
   width: 80%;
   margin: 0 auto;
   border-radius: 25px;
-  background-color: var(--login-background);
+  background-image: linear-gradient(to right, #222222b9, #222222b9, #5c531fb9, #b6a30fb9, #b6a30fb9);
 }
 
   /*====Parent's both childs====*/
@@ -33,6 +33,21 @@
   flex-basis: 50%;
   flex-basis: 1;
   height: 60vh;
+  position: relative;
+}
+
+.loginForm:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;  
+  border-right: 8px solid #5c531fb9;
+  transform-origin: bottom left;
+  transform: skew(-20deg, 0deg);
+  z-index: -3;
 }
 
 /*====First child's form*/
