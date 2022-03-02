@@ -1,8 +1,4 @@
-/*=======================PAPILDOMI KOMENTARAI===================*/
-        /* ISTRINTI IS REGISTRATION.CSS KLASES (Jei jos neliecia registracijos):
-        .main-form
-        .form-h3   
-        */
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -10,7 +6,7 @@
 }
 
 :root {
-  --login-background: #22222294;
+  --login-background: #222222b9;
   --text: #ffffff;
   --button-background:#997125db;
   --focus: #634919;
@@ -23,7 +19,6 @@
   align-items: center;
   flex-flow: row wrap;
   width: 80%;
-  height: auto;
   margin: 0 auto;
   border-radius: 25px;
   background-color: var(--login-background);
@@ -63,7 +58,7 @@
   border-radius: 15px;
   padding: 1em;
   margin: .8em;
-  background-color: rgba(94, 94, 94, 0.522);
+  background-color: #5e5e5e9f;
   transition: 500ms ease-in-out;
 }
 

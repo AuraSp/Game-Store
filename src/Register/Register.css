@@ -1,19 +1,13 @@
 :root {
-  --main-background: #222222e8;
+  --register-background: #222222b9;
   --text: #ffffff;
-  --input-background: #414a4a;
+  --button-background:#997125db;
+  --focus: #634919;
 }
 
-/* ! Main form */
-body {
-  background-image: url(https://images.alphacoders.com/743/thumb-1920-74381.JPG);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.registerPage {
-  background-color: var(--main-background);
+/*====Parent div form====*/
+.register-form {
+  background-color: var(--register-background);
   width: 80%;
   margin: 0 auto;
   border-radius: 25px;
@@ -23,19 +17,11 @@ body {
   align-items: center;
 }
 
-.main-form {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  display: flex;
-  flex-flow: column;
-  justify-content:center;
-  align-content: center;
+.register-form h3 {
+  color: var(--text);
+  margin: 1em 0 1em 0;
 }
 
-.form-h3 {
-  font-weight: lighter;
-  margin-bottom: 2em;
-}
 
 .main-label,
 .main-select-label {
@@ -71,7 +57,6 @@ select {
   cursor: pointer;
 }
 
-.form-h3,
 label,
 button {
   color: var(--text);

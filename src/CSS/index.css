@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /*----- HEADER SECTIION -----*/
 .d-flex {
   /* Header */
@@ -10,9 +11,6 @@
   flex-flow: row wrap;
   padding: 0.5em;
   color: white;
-  background-image: url(https://images.alphacoders.com/743/thumb-1920-74381.JPG);
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .left-nav,
@@ -210,12 +208,6 @@
 
 /*----- FOOTER -----*/
 
-
-.mainFooter {
-  background-image: url(https://images.alphacoders.com/743/thumb-1920-74381.JPG);
-  background-position: center;
-  background-attachment: fixed;
-}
 .FAQ {
   margin: 0 250px;
   padding-bottom: 3px;
