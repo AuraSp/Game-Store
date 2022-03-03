@@ -10,25 +10,68 @@
   background-image: linear-gradient(to right bottom, #222222c2, #222222c2, #5c531fc2, #b6a30fc2);
   width: 80%;
   margin: 1em auto;
+  padding: 2em;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  20% {
+    display: block;
+    opacity: .2;
+  }
+
+  40% {
+    display: block;
+    opacity: .4;
+  }
+  60% {
+    display: block;
+    opacity: .6;
+  }
+
+  80% {
+    display: block;
+    opacity: .8;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 
   /*====Form additional inside-form elements styles*/
       /*--Title--*/
 .registerForm h2 {
   color: var(--text);
-  margin: 1em;
+  margin-top: 2em;
+  padding-bottom: .1em;
+}
+
+.postTitle {
+  color: #b6a30fc2;
+  margin: .8em 0 .8em 0;
+  padding-bottom: 1em;
+  width: 25%;
+  text-align: center;
+  border-bottom: 1px solid;
 }
 
       /*--Input--*/
 .registerForm input, .signUp-countrySelect {
   border-radius: 15px;
   background-color: #5e5e5e9f;
-  padding: 1em;
+  padding: 1.2em;
   margin: .8em;
   color: var(--text);
   border: none;
@@ -43,9 +86,10 @@
   color: var(--text);
 }
 
-.registerForm input#agreement {
-  margin: 0;
-  width: 5em;
+.registerForm div {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
 }
 
       /* Button, link */
@@ -53,6 +97,7 @@
   width: 80%;
   text-align: center;
   margin-top: 1em;
+  color: var(--text);
 }
 
 .signUp-legacy {
@@ -70,7 +115,7 @@
   background-color: var(--button-background);
   border: none;
   border-radius: 15px;
-  margin-bottom: 1em;
+  margin: 2em 0 2em 0;
 }
 
 .signUp-Btn:hover {

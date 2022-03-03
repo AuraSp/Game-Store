@@ -15,6 +15,38 @@
   margin: 1em auto;
   border-radius: 25px;
   background-image: linear-gradient(to right, #222222c2, #222222c2, #5c531fc2, #b6a30fc2, #b6a30fc2);
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  20% {
+    display: block;
+    opacity: .2;
+  }
+
+  40% {
+    display: block;
+    opacity: .4;
+  }
+  60% {
+    display: block;
+    opacity: .6;
+  }
+
+  80% {
+    display: block;
+    opacity: .8;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 
   /*====Parent's both childs====*/
