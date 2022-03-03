@@ -48,8 +48,7 @@
   display: flex;
   flex-flow: column;
   justify-content:center;
-  align-content: center;
-  text-align: center;
+  align-items: center;
 }
 
   /*====Form additional inside-form elements styles*/
@@ -87,11 +86,12 @@
 
       /* Button, link */
 .signIn-Btn {
-  padding: 1em;
   background-color: var(--button-background);
   border: none;
   border-radius: 15px;
   margin-bottom: 1em;
+  padding: 1em;
+  width: 30%;
 }
 
 .signIn-Btn:hover {
