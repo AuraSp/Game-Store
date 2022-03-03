@@ -97,10 +97,10 @@ const Register = (props) => {
         {errList}
       </p>
       <div>
-      <input class="regUsername-input" type="text" id="reg-username" placeholder="Username" onChange={(e) => { changeData(e) }} required />
-      <input class="regSurname-input" type="text" id="reg-surname" placeholder="Surname" onChange={(e) => { changeData(e) }} required />
+      <input type="text" id="reg-Name" placeholder="Username" onChange={(e) => { changeData(e) }} required />
+      <input type="text" id="reg-surname" placeholder="Surname" onChange={(e) => { changeData(e) }} required />
       </div>
-      <input class="regEmail-input" type="email" id="reg-email" placeholder="Email" onChange={(e) => { changeData(e) }} required />
+      <input type="email" id="reg-email" placeholder="Email" onChange={(e) => { changeData(e) }} required />
       {/* <label class="regCountry-select" htmlFor="country">Country of Residence</label> */}
       <select class="signUp-countrySelect" id="reg-country" form="countryform" name="countrylist" onChange={(e) => { changeData(e) }} required>
         <option>Choose your country</option>
@@ -110,15 +110,15 @@ const Register = (props) => {
         <option value="----">----</option>
       </select>
       <div>
-      <input class="regPassword-input" type="password" id="reg-password" placeholder="Password" onChange={(e) => { changeData(e) }} required />
-      <input class="regPasswordRpt-input" type="password" id="repeat-password" placeholder="Repeat password" onChange={(e) => { changeData(e) }} required />
+      <input type="password" id="reg-password" placeholder="Password" onChange={(e) => { changeData(e) }} required />
+      <input type="password" id="repeat-password" placeholder="Repeat password" onChange={(e) => { changeData(e) }} required />
       </div>
       <label class="signUp-checkLabel">
         <input type="checkbox" name="confirm" id="agreement" required />
         I am 13 years of age or older and agree to the terms of the&nbsp;
         <a class="signUp-legacy" href="#">Subscriber Agreement</a> and the&nbsp;<a class="signUp-legacy" href="#">Privacy Policy</a>.</label>
 
-      <button class="signUp-Btn" id="signUpSubmit">Sign up</button>
+      <button class="signUp-btn" id="signUpSubmit">Sign up</button>
     </form>
   )
 }

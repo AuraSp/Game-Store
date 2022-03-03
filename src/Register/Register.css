@@ -110,7 +110,7 @@
   color: var(--focus);
 }
 
-.signUp-Btn {
+.signUp-btn {
   padding: 1em;
   background-color: var(--button-background);
   border: none;
@@ -118,7 +118,7 @@
   margin: 2em 0 2em 0;
 }
 
-.signUp-Btn:hover {
+.signUp-btn:hover {
   background-color: var(--focus);
   cursor: pointer;
 }
