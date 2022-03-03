@@ -14,8 +14,8 @@ const Login = () => {
         </form>
       </div>
       <div class="loginAd"> {/*item-2*/}
-        <p class="loginAd-HeaderText">Join and discover thousands of games to play.</p>
-        <a class="loginAd-MainLink" href="#">Learn More</a>
+        <p class="loginAd-headerText">Join and discover thousands of games to play.</p>
+        <a class="loginAd-mainLink" href="#">Learn More</a>
         <img src="./img/Gaming Illustration in PNG, SVG.png" alt="img" />
         <p class="loginAd-footerText">It's free and easy to use.</p>
         {/* <div class="logUtilities">

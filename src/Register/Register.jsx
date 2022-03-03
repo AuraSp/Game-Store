@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, browserSessionPersistence } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
 import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
 
-import './Register.css';
+import "./Register.css";
 const Register = (props) => {
   const firebaseConfig = {
     apiKey: "AIzaSyDA9Ez4i7vSWvq8uzvmmy8CMQ54x-EDRfs",
@@ -90,34 +90,31 @@ const Register = (props) => {
     }
   }
   return (
-    <form class="register-form" id="signUpForm" onSubmit={(e) => { submitRegistration(e) }}>
-      <h3>Create your personal account</h3>
+    <form class="registerForm" id="signUpForm" onSubmit={(e) => { submitRegistration(e) }}>
+      <h2>CREATE YOUR PERSONAL ACCOUNT</h2>
       <p class="errs">
         {errList}
       </p>
-      <input class="main-input" type="text" id="reg-username" onChange={(e) => { changeData(e) }} required />
-      <label class="main-label">Surname</label>
-      <input class="main-input" type="text" id="reg-surname" onChange={(e) => { changeData(e) }} required />
-      <label class="main-label">Email</label>
-      <input class="main-input" type="email" id="reg-email" onChange={(e) => { changeData(e) }} required />
-      <label class="main-select-label" htmlFor="country">Country of Residence</label>
-      <select class="main-select" id="reg-country" name="countrylist" onChange={(e) => { changeData(e) }} form="countryform" required>
+      <input class="regUsername-input" type="text" id="reg-username" placeholder="Username" onChange={(e) => { changeData(e) }} required />
+      <input class="regSurname-input" type="text" id="reg-surname" placeholder="Surname" onChange={(e) => { changeData(e) }} required />
+      <input class="regEmail-input" type="email" id="reg-email" placeholder="Email" onChange={(e) => { changeData(e) }} required />
+      {/* <label class="regCountry-select" htmlFor="country">Country of Residence</label> */}
+      <select class="signUp-countrySelect" id="reg-country" form="countryform" name="countrylist" onChange={(e) => { changeData(e) }} required>
+        <option>Choose your country</option>
         <option value="----">----</option>
         <option value="----">----</option>
         <option value="----">----</option>
         <option value="----">----</option>
       </select>
-      <label class="main-label">Password</label>
-      <input class="main-input" type="password" id="reg-password" onChange={(e) => { changeData(e) }} required />
-      <label class="main-label">Repeat Password</label>
-      <input class="main-input" type="password" id="repeat-password" onChange={(e) => { changeData(e) }} required />
-      <label class="label-bottom">
+      <input class="regPassword-input" type="password" id="reg-password" placeholder="Password" onChange={(e) => { changeData(e) }} required />
+      <input class="regPasswordRpt-input" type="password" id="repeat-password" placeholder="Repeat password" onChange={(e) => { changeData(e) }} required />
+      <label class="signUp-checkLabel">
         <input type="checkbox" name="confirm" id="agreement" required />
         I am 13 years of age or older and agree to the terms of the
-        <a class="bottom-links" href="#">Subscriber Agreement</a> and the
-        <a class="bottom-links" href="#">Privacy Policy</a>.</label>
+        <a class="signUp-legacy" href="#">Subscriber Agreement</a> and the
+        <a class="signUp-legacy" href="#">Privacy Policy</a>.</label>
 
-      <input type="submit" class="btn-form" id="signUpSubmit" value="Confirm" />
+      <button class="signUp-Btn" id="signUpSubmit">Sign up</button>
     </form>
   )
 }
