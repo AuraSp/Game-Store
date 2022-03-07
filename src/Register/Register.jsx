@@ -90,10 +90,10 @@ const Register = (props) => {
     }
   }
   return (
-    <form class="registerForm" id="signUpForm" onSubmit={(e) => { submitRegistration(e) }}>
+    <form className="registerForm" id="signUpForm" onSubmit={(e) => { submitRegistration(e) }}>
       <button className='signUp-closeBtn'>X</button>
       <h2>CREATE YOUR PERSONAL ACCOUNT</h2>
-      <p class='postTitle'>Join our community and enjoy a whole variety of games</p>
+      <p className='postTitle'>Join our community and enjoy a whole variety of games</p>
       <p class="errs">
         {errList}
       </p>
@@ -103,7 +103,7 @@ const Register = (props) => {
       </div>
       <input type="email" id="reg-email" placeholder="Email" onChange={(e) => { changeData(e) }} required />
       {/* <label class="regCountry-select" htmlFor="country">Country of Residence</label> */}
-      <select class="signUp-countrySelect" id="reg-country" form="countryform" name="countrylist" onChange={(e) => { changeData(e) }} required>
+      <select className="signUp-countrySelect" id="reg-country" form="countryform" name="countrylist" onChange={(e) => { changeData(e) }} required>
         <option>Choose your country</option>
         <option value="----">----</option>
         <option value="----">----</option>
@@ -114,12 +114,12 @@ const Register = (props) => {
       <input type="password" id="reg-password" placeholder="Password" onChange={(e) => { changeData(e) }} required />
       <input type="password" id="repeat-password" placeholder="Repeat password" onChange={(e) => { changeData(e) }} required />
       </div>
-      <label class="signUp-checkLabel">
+      <label className="signUp-checkLabel">
         <input type="checkbox" name="confirm" id="agreement" required />
         I am 13 years of age or older and agree to the terms of the&nbsp;
-        <a class="signUp-legacy" href="#">Subscriber Agreement</a> and the&nbsp;<a class="signUp-legacy" href="#">Privacy Policy</a>.</label>
+        <a className="signUp-legacy" href="#">Subscriber Agreement</a> and the&nbsp;<a className="signUp-legacy" href="#">Privacy Policy</a>.</label>
 
-      <button class="signUp-submitBtn" id="signUpSubmit">Sign up</button>
+      <button className="signUp-submitBtn" id="signUpSubmit">Sign up</button>
     </form>
   )
 }

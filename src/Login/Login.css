@@ -101,6 +101,24 @@
   transition: 500ms ease-in-out;
 }
 
+.loginEmail-Input:before, 
+.loginEmail-Input:after {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.loginEmail-Input:before {
+  content: "-";
+  left: 50%;
+}
+
+.loginEmail-Input:hover:before {
+  left: -5px;
+  opacity: 1;
+}
+
+
 .loginEmail-Input:hover,
 .loginPassword-Input:hover {
   box-shadow: 0 50px 10px #af83318e inset;
