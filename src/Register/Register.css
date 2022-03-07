@@ -7,15 +7,15 @@
 
 /*====Parent div form====*/
 .registerForm {
-  background-image: linear-gradient(to right bottom, #222222c2, #222222c2, #5c531fc2, #b6a30fc2);
-  width: 80%;
-  margin: 1em auto;
-  padding: 2em;
-  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  margin: 1em auto;
+  padding: 2em 4em 2em 4em;
+  border-radius: 25px;
+  background-image: linear-gradient(to right bottom, #222222c2, #222222c2, #83741ec2, #b6a30fc2);
   animation: fadeIn 0.5s ease-out;
 }
 
@@ -53,28 +53,28 @@
   /*====Form additional inside-form elements styles*/
       /*--Title--*/
 .registerForm h2 {
-  color: var(--text);
   margin-top: 2em;
   padding-bottom: .1em;
+  color: var(--text);
 }
 
 .postTitle {
-  color: #b6a30fc2;
+  width: 25%;
   margin: .8em 0 .8em 0;
   padding-bottom: 1em;
-  width: 25%;
   text-align: center;
+  color: #b6a30fc2;
   border-bottom: 1px solid;
 }
 
       /*--Input--*/
 .registerForm input, .signUp-countrySelect {
-  border-radius: 15px;
-  background-color: #5e5e5e9f;
   padding: 1.2em;
   margin: .8em;
-  color: var(--text);
   border: none;
+  border-radius: 15px;
+  color: var(--text);
+  background-color: #5e5e5e9f;
   transition: 500ms ease-in-out;
 }
 
@@ -86,17 +86,21 @@
   color: var(--text);
 }
 
-.registerForm div {
-  width: 50%;
-  text-align: center;
-  display: inline-block;
+.registerForm input:focus::placeholder {
+  opacity: 0;
 }
 
-      /* Button, link */
+.registerForm div {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+      /* Buttons, links */
 .signUp-checkLabel {
   width: 80%;
-  text-align: center;
   margin-top: 1em;
+  text-align: center;
   color: var(--text);
 }
 
@@ -110,16 +114,34 @@
   color: var(--focus);
 }
 
-.signUp-btn {
+.signUp-submitBtn {
   padding: 1em;
-  background-color: var(--button-background);
+  margin: 2em 0 2em 0;
   border: none;
   border-radius: 15px;
-  margin: 2em 0 2em 0;
+  background-color: var(--button-background);
 }
 
-.signUp-btn:hover {
+.signUp-submitBtn:hover {
   background-color: var(--focus);
+  cursor: pointer;
+}
+
+.signUp-closeBtn {
+  align-self: flex-end;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  color: var(--text);
+  background-color: transparent;
+}
+
+.signUp-closeBtn:hover {
+  border: 1px solid var(--text);
+  border-radius: 50%;
   cursor: pointer;
 }
 

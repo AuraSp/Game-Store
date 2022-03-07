@@ -5,10 +5,11 @@ const Login = () => {
   return (
     <div class="loginBlock"> {/*loginPage*/}
       <div class="loginForm"> {/*item-1*/}
+      <button className='signIn-closeBtn'>X</button>
         <form>
           <h2>SIGN IN</h2>
-          <input class="loginEmail-Input" type="email" id="log-email" placeholder='Account email'/>
-          <input class="loginPassword-Input" type="password" id="log-password" placeholder='Password'/>
+          <input class="loginEmail-Input" type="email" id="log-email" placeholder='Account email' />
+          <input class="loginPassword-Input" type="password" id="log-password" placeholder='Password' />
           <button class='signIn-Btn' id="signInSubmit">Sign in</button>
           <a class="passwordLink" href="#">Forgot your password?</a>
         </form>

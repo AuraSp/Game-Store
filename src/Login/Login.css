@@ -52,12 +52,12 @@
   /*====Parent's both childs====*/
 .loginForm, .loginAd {
   display: flex;
+  flex-basis: 50%;
+  flex-basis: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: 50%;
-  flex-basis: 1;
-  height: 60.9vh;
+  height: 61vh;
   position: relative;
 }
 
@@ -68,11 +68,11 @@
   width: 90%;
   height: 100%;
   top: 0;
-  left: 0;  
+  left: 0;
+  z-index: -3;
   border-right: 8px solid #5c531fb9;
   transform-origin: bottom left;
   transform: skew(-20deg, 0deg);
-  z-index: -3;
 }
 
 /*====First child's form*/
@@ -86,17 +86,17 @@
   /*====Form additional inside-form elements styles*/
       /*--Title--*/
 .loginForm h2 {
-  color: var(--text);
   margin-bottom: 1em;
+  color: var(--text);
 }
 
       /*--Input--*/
 .loginEmail-Input,
 .loginPassword-Input {
-  border: none;
-  border-radius: 15px;
   padding: 1em;
   margin: .8em;
+  border: none;
+  border-radius: 15px;
   background-color: #5e5e5e9f;
   transition: 500ms ease-in-out;
 }
@@ -116,18 +116,38 @@
   opacity: 0;
 }
 
-      /* Button, link */
+      /* Buttons, links */
 .signIn-Btn {
-  background-color: var(--button-background);
+  width: 30%;
+  padding: 1em;
+  margin-bottom: 1em;
   border: none;
   border-radius: 15px;
-  margin-bottom: 1em;
-  padding: 1em;
-  width: 30%;
+  background-color: var(--button-background);
 }
 
 .signIn-Btn:hover {
   background-color: var(--focus);
+  cursor: pointer;
+}
+
+.signIn-closeBtn {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  z-index: 2;
+  color: var(--text);
+  background-color: transparent;
+  transform: translate(20em, -12em);
+}
+
+.signIn-closeBtn:hover {
+  border: 1px solid var(--text);
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -144,14 +164,14 @@
 /*====Second child's Ad*/
       /* Texts */
 .loginAd-headerText{
-  color: var(--text);
   margin-bottom: 1.5em;
+  color: var(--text);
 }
 
 .loginAd-mainLink {
-  color: var(--text);
-  font-weight: bold;
   margin-bottom: 1.5em;
+  font-weight: bold;
+  color: var(--text);
 }
 
 .loginAd-mainLink:hover {
@@ -159,8 +179,8 @@
 }
 
 .loginAd-footerText {
-  color: var(--text);
   margin-bottom: 0.8em;
+  color: var(--text);
 }
 
       /* Image */

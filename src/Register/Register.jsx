@@ -91,6 +91,7 @@ const Register = (props) => {
   }
   return (
     <form class="registerForm" id="signUpForm" onSubmit={(e) => { submitRegistration(e) }}>
+      <button className='signUp-closeBtn'>X</button>
       <h2>CREATE YOUR PERSONAL ACCOUNT</h2>
       <p class='postTitle'>Join our community and enjoy a whole variety of games</p>
       <p class="errs">
@@ -118,7 +119,7 @@ const Register = (props) => {
         I am 13 years of age or older and agree to the terms of the&nbsp;
         <a class="signUp-legacy" href="#">Subscriber Agreement</a> and the&nbsp;<a class="signUp-legacy" href="#">Privacy Policy</a>.</label>
 
-      <button class="signUp-btn" id="signUpSubmit">Sign up</button>
+      <button class="signUp-submitBtn" id="signUpSubmit">Sign up</button>
     </form>
   )
 }
