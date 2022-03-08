@@ -89,7 +89,7 @@ const Main = (props) => {
       <div class="mainPartOne">
         <div class="mainOne">
           <div class="carouselWBtns">
-            <button class="prevBtn cBtn" onClick={(e) =>{slide(1, "prev")}}>&#8592;</button>
+            <button class="prevBtn cBtn" onClick={(e) =>{slide(1, "prev")}}>&#10577;</button>
             <div class="carousel">
               <div class="inner">
                 {Data.map((product) =>(
@@ -97,12 +97,12 @@ const Main = (props) => {
                 ))}
               </div>
             </div>
-            <button class="nextBtn cBtn" onClick={(e) =>{slide(1, "next")}}>&#8594;</button>
+            <button class="nextBtn cBtn" onClick={(e) =>{slide(1, "next")}}>&#10575;</button>
           </div>
         </div>
         <div class="mainTwo">
           <div class="carouselWBtns">
-            <button class="prevBtn2 prev" onClick={(e) =>{slide(2, "prev")}}>&#8592;</button>
+            <button class="prevBtn2 prev" onClick={(e) =>{slide(2, "prev")}}>&#10577;</button>
             <div class="carousel">
               <div class="inner2">
                 {Data.map((product) =>(
@@ -110,12 +110,12 @@ const Main = (props) => {
                 ))}
               </div>
             </div>
-            <button class="nextBtn2 prev " onClick={(e) =>{slide(2, "next")}}>&#8594;</button>
+            <button class="nextBtn2 prev " onClick={(e) =>{slide(2, "next")}}>&#10575;</button>
           </div>
         </div>
         <div class="mainThree">
           <div class="carouselWBtns">
-            <button class="prevBtn3 cBtn" onClick={(e) =>{slide(3, "prev")}}>&#8592;</button>
+            <button class="prevBtn3 cBtn" onClick={(e) =>{slide(3, "prev")}}>&#10577;</button>
             <div class="carousel">
               <div class="inner3">
                 <div class="bigItem3">
@@ -193,7 +193,7 @@ const Main = (props) => {
                 </div>
               </div>
             </div>
-            <button class="nextBtn3 cBtn" onClick={(e) =>{slide(3, "next")}}>&#8594;</button>
+            <button class="nextBtn3 cBtn" onClick={(e) =>{slide(3, "next")}}>&#10575;</button>
           </div>
         </div>
       </div>
