@@ -160,13 +160,15 @@
   z-index: 2;
   color: var(--text);
   background-color: transparent;
+  transition: 300ms linear;
   transform: translate(20em, -12em);
 }
 
 .signIn-closeBtn:hover {
+  cursor: pointer;
   border: 1px solid var(--text);
   border-radius: 50%;
-  cursor: pointer;
+  background-color: var(--button-background);
 }
 
 .passwordLink {

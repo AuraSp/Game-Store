@@ -141,12 +141,13 @@
   border: none;
   color: var(--text);
   background-color: transparent;
+  transition: 300ms linear;
 }
 
 .signUp-closeBtn:hover {
-  border: 1px solid var(--text);
-  border-radius: 50%;
   cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--button-background);
 }
 
 .errs {
