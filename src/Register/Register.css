@@ -78,6 +78,10 @@
   transition: 500ms ease-in-out;
 }
 
+.signUp-countrySelect select::-ms-expand {
+  display: none;
+}
+
 .registerForm input:hover {
   box-shadow: 0 50px 10px #af83318e inset;
 }
