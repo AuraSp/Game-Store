@@ -1,0 +1,438 @@
+[
+
+    {
+
+        "name": "After the fall",
+        "price": 31.99,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256863087/movie480_vp9.webm?t=1638454279.mp4",
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_183b756588307e023d442a63081616160086159c.1920x1080.jpg?t=1643903019",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_6fdda1946269f2b38663508927b296a982e60fa9.1920x1080.jpg?t=1643903019",
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_136ae602216b3fabbd0f6210bf129470f2e6c70c.1920x1080.jpg?t=1643903019",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_e78f8b8c829d2661ced1d9d792f264eb220bf2ed.1920x1080.jpg?t=1643903019",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Action", "Adventure", "Co-op", "Gore"],
+        "status": 0
+    },
+
+    {
+
+        "name": "God Of War",
+        "price": 49.99,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256864004/movie480_vp9.webm?t=1639001817.mp4",
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_6eccc970b5de2943546d93d319be1b5c0618f21b.600x338.jpg?t=1642526157",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_3670ba72c7e3e9c3c3225547ef2c1053504e62b8.600x338.jpg?t=1642526157",
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_93a3ca63aa2cd8c675bbb6430324ee3f2d44b845.600x338.jpg?t=1642526157",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_0858b868ea51d53f73bd805ba7382f027dd33dca.600x338.jpg?t=1642526157",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Action", "Adventure", "RPG", "Mythology"]
+        ,
+        "status": 0
+    },
+    {
+
+        "name": "Half Life: Alyx",
+        "price": 49.99,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256776470/movie480.webm?t=1585225680.mp4" ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_da44890033fe83bc27351b94ed8e795a2711719e.600x338.jpg?t=1598283504",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_a9aaa43921663eb22b41391a7d35760cc1195d97.600x338.jpg?t=1598283504",
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_f2b7c606dd2b1d68c9920bdb839dfb897e2384ee.600x338.jpg?t=1598283504",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_7a0cd4c786037c8fcb30bc072271b37a16624fba.600x338.jpg?t=1598283504",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Adventure", "Puzzle", "VR", "Mystery"],
+        "status": 0
+    }
+    ,
+    {
+
+        "name": "Red Dead Redemption 2",
+        "price": 59.99,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256768371/movie480.webm?t=1574881352.mp4"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_66b553f4c209476d3e4ce25fa4714002cc914c4f.600x338.jpg?t=1618851907",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_bac60bacbf5da8945103648c08d27d5e202444ca.600x338.jpg?t=1618851907" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_668dafe477743f8b50b818d5bbfcec669e9ba93e.600x338.jpg?t=1618851907",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_4ce07ae360b166f0f650e9a895a3b4b7bf15e34f.600x338.jpg?t=1618851907",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 0
+    },
+    {
+
+        "name": "Rogue Tower",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256867439/movie480_vp9.webm?t=1641632076"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1843760/header_292x136.jpg?t=1643386141",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1843760/ss_bb8e78d081fb3edf05cef47afb061490641ac831.600x338.jpg?t=1643386141" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1843760/ss_b1d5825e05fe7f009263272108c25b240d33adc2.600x338.jpg?t=1643386141",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1843760/ss_e878536300761885ebd6b141c5ed76fbab7619db.600x338.jpg?t=1643386141",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Cities Skylines Map Pack",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256868457/movie480_vp9.webm?t=1641825083"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1726382/header_292x136.jpg?t=1643101209",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1726382/ss_02084b939e02f5bf5c32c149c15f7121a62e9184.600x338.jpg?t=1643101209" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1726382/ss_bd4142c8a1f8eef82035b84ac2ec7f9975e81427.600x338.jpg?t=1643101209",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1726382/ss_17406cc2762a5b496a8206467a27f23d5febfa58.600x338.jpg?t=1643101209",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Dread Hunger",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256870834/movie480_vp9.webm?t=1643230899"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1418630/header_292x136.jpg?t=1646709871",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1418630/ss_62aae690307c00937ba95b2f542148b1d244a847.600x338.jpg?t=1646709871" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1418630/ss_61b09a3418de995478818a946453cdcff7185809.600x338.jpg?t=1646709871",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1418630/ss_5990e94c5e19f8261f10c3b591c2a6f4a48ee7a8.600x338.jpg?t=1646709871",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Democracy 4",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256868829/movie480_vp9.webm?t=1642065397"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1410710/header_292x136.jpg?t=1642065399",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1410710/ss_af543b338f85e863b23a2f2b6e6687edf21e0c4c.600x338.jpg?t=1642065399" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1410710/ss_6e8967c4538cb639b27582a36a9bd870b1764e09.600x338.jpg?t=1642065399",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1410710/ss_a88d61d5a664b8df8385ddc44b48ff3b229c3a8d.600x338.jpg?t=1642065399",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Nobody saves the world",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256869661/movie480_vp9.webm?t=1642515548"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1432050/header_292x136.jpg?t=1645114415",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1432050/ss_c102795bd96a046e9592c226a64395f536accf06.600x338.jpg?t=1645114415" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1432050/ss_7b08dee57dfcf4507bb86823d813154fde26b17c.600x338.jpg?t=1645114415",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1432050/ss_8d29da188ac9c70cdc28cfb13eb8380c77f6b96b.600x338.jpg?t=1645114415",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Yu-Gi-Oh Master Duel",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/1449850/header_292x136.jpg?t=1642554034"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1449850/header_292x136.jpg?t=1642554034",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1449850/ss_7de501a6f2c485aef22eed9c3b79e761c26c4d1a.600x338.jpg?t=1642554034" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1449850/ss_e568cc7bd1896039e2383f48488a262d873fbf20.600x338.jpg?t=1642554034",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1449850/ss_6501d1b0e2dc14a5e1031d5e02456d9b72912a0b.600x338.jpg?t=1642554034",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Zenith The last city",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256863161/movie480_vp9.webm?t=1641526391"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1403370/header_292x136.jpg?t=1643306425",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1403370/ss_f98a742e170cd4703da55cd85f6e2829f90192c5.600x338.jpg?t=1643306425" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1403370/ss_8da884ce38dbf639dcd4745622a299d01c19fd9f.600x338.jpg?t=1643306425",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1403370/ss_027a73b651593a4193bd0ea4770f46b6e3eae1c6.600x338.jpg?t=1643306425",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Crystal Clash",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256865238/movie480_vp9.webm?t=1639591687"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1839660/header_292x136.jpg?t=1642877668",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1839660/ss_b7803d2a3d1cc0a4e9d01e1275790eac1c21c74f.600x338.jpg?t=1642877668" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1839660/ss_3d6ac4acfd92d66261d3d41bd7a078ab675aaef2.600x338.jpg?t=1642877668",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1839660/ss_992e2ad20660ce891e612986901329b821e84a73.600x338.jpg?t=1642877668",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Terraria",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256785003/movie480_vp9.webm?t=1589654781"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header_292x136.jpg?t=1590092560",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/105600/ss_8c03886f214d2108cafca13845533eaa3d87d83f.600x338.jpg?t=1590092560" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/105600/ss_ae168a00ab08104ba266dc30232654d4b3c919e5.600x338.jpg?t=1590092560",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/105600/ss_9edd98caaf9357c2f40758f354475a56e356e8b0.600x338.jpg?t=1590092560",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Rainbow Six Siege",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256854729/movie480_vp9.webm?t=1633534183"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/359550/header_292x136.jpg?t=1645552763",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/359550/ss_79af6b4e7ea15b745c0c315e4ae8f7450bb64f58.600x338.jpg?t=1645552763" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/359550/ss_0d619a68898400c9cd59b1afa2e36bd50f12d0b5.600x338.jpg?t=1645552763",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/359550/ss_6d4e3b1021a489106f33c054bcb0e74ea4bd706f.600x338.jpg?t=1645552763",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 1
+    },
+    {
+
+        "name": "Crash Bandicoot N.Sane trilogy",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256720063/movie480.webm?t=1529112507"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/spotlights/b223800234b836efbb0aaed7/spotlight_image_english.jpg?t=1646673197",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/731490/ss_66d4bf28161b1c7a5a78f579bcea05a0785f2c50.600x338.jpg?t=1568841571" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/731490/ss_931f13ad19753ac5d491bc55e31ec9e2181ca637.600x338.jpg?t=1568841571",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/731490/ss_312f4dbd137af1b36c3572aaa79349db6dd841a2.600x338.jpg?t=1568841571",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 2
+    },
+    {
+
+        "name": "Hearts Of Iron IV",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256847185/movie480_vp9.webm?t=1629210246"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/spotlights/ea00b6d895ce3d7185e63170/spotlight_image_english.jpg?t=1646323555",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/394360/ss_c5f3c3cacb3ed43f9757b39add492fcf14b5790f.600x338.jpg?t=1645196890" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/394360/ss_9d61ffe52d82e99a759bd28db0dd3fa66607f858.600x338.jpg?t=1645196890",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/394360/ss_3732cd647cdead38985c913ac9f3e85e7a773bea.600x338.jpg?t=1645196890",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 2
+    },
+    {
+
+        "name": "Airborne Kingdom",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256876868/movie480_vp9.webm?t=1646676918"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/982290/header.jpg?t=1646750735",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/982290/ss_a171d99cd61330b04927d4b5e91079046de841ce.600x338.jpg?t=1646750735" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/982290/ss_2c1cb927016f03efd39b46f6f5f1cf531ba48a44.600x338.jpg?t=1646750735",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/982290/ss_7690b5ecb005ccc94e890cf38c55313b88e2d8b9.600x338.jpg?t=1646750735",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 3
+    },
+    {
+
+        "name": "Hammerting",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256860543/movie480_vp9.webm?t=1637082008"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/760650/header_alt_assets_4.jpg?t=1646649230",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/760650/ss_95e21fcba42bbe1dd8f482f845d47caa93519b69.600x338.jpg?t=1646649230" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/760650/ss_44962d6a454c4cab5fa59a074c02e20c6648866b.600x338.jpg?t=1646649230",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/760650/ss_d9b753f0e670af3ac5aa95b92da5cda38001ffd5.600x338.jpg?t=1646649230",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 3
+    },
+    {
+
+        "name": "Fall Guys: Ultimate Knockout",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256862750/movie480_vp9.webm?t=1638289073"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1097150/header.jpg?t=1645126741",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1097150/ss_1c2c66a222fe24373fcb099b920b2fdada8a0660.600x338.jpg?t=1645126741" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1097150/ss_bba3a7ac1ad5b76e3dec817d80ea01997d05a665.600x338.jpg?t=1645126741",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1097150/ss_a738dbb787d5aef8d2f8348c0b8f54c7b8a0da3e.600x338.jpg?t=1645126741",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 3
+    },
+    {
+
+        "name": "Risk Of Rain 2",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256827307/movie480_vp9.webm?t=1616688273"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/632360/header.jpg?t=1646153779",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/632360/ss_a3f57f281813cb51cb5d919701470acb962ff297.600x338.jpg?t=1646153779" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/632360/ss_2bb49071317f7b241a527cf6e7aabd2cb6af055b.600x338.jpg?t=1646153779",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/632360/ss_328d6fcb223f848c2a1047bb86702c4175d92317.600x338.jpg?t=1646153779",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 3
+    },
+    {
+
+        "name": "Detroit, Become Human",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256784014/movie480_vp9.webm?t=1590429401"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/1222140/header.jpg?t=1625648054",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/1222140/ss_9c900def2b1d9a003b7d3e202ea2a7556a36e081.600x338.jpg?t=1625648054" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/1222140/ss_3011c05e404043e3bfed1f6de7fe12ffd58ddc9b.600x338.jpg?t=1625648054",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/1222140/ss_9e6c271b6d11b1d0f35da336fb57b35fed0079d1.600x338.jpg?t=1625648054",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 4
+    },
+    {
+
+        "name": "Overcooked 2",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256803126/movie480_vp9.webm?t=1601561015"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/728880/header.jpg?t=1643298085",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/728880/ss_2f84a12e1fe82cca37848bf29d4b8b16e83db03b.600x338.jpg?t=1643298085" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/728880/ss_7f290dccbdc3c0eb9ded951717bceba5d7455764.600x338.jpg?t=1643298085",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/728880/ss_652d62549a8a5fdf4f0061e20b16a3cd9a19dc45.600x338.jpg?t=1643298085",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 4
+    },
+    {
+
+        "name": "Tom Clancy's Ghost Recon Wildlands",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256680693/movie480.webm?t=1488553367"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/460930/header.jpg?t=1602605434",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/460930/ss_5a5afdfe87c53cae9efa3d559e588501abfe88c6.600x338.jpg?t=1602605434" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/460930/ss_c8fb21808c02c66037df923c261924ad6d4aa959.600x338.jpg?t=1602605434",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/460930/ss_7cbda16ec0cdfabd553b0e830158e7594b0dc44a.600x338.jpg?t=1602605434",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 4
+    },
+    {
+
+        "name": "FarCry 5",
+        "price": 12.49,
+        "trailerUrl": "https://cdn.akamai.steamstatic.com/steam/apps/256700022/movie480.webm?t=1509649460"  ,
+        "photo1": "https://cdn.akamai.steamstatic.com/steam/apps/552520/header.jpg?t=1628209646",
+        "photo2": "https://cdn.akamai.steamstatic.com/steam/apps/552520/ss_a52c732d62a26d20bcfb0525929178749392f4fc.600x338.jpg?t=1628209646" ,
+        "photo3": "https://cdn.akamai.steamstatic.com/steam/apps/552520/ss_5b5701cb9cc39b661d6a2903a97e0bb75eb2a6c6.600x338.jpg?t=1628209646",
+        "photo4": "https://cdn.akamai.steamstatic.com/steam/apps/552520/ss_60894d685a0f3488ceaf0592625fc904aa2bfeb1.600x338.jpg?t=1628209646",
+        "specs": {
+            "os": "windows 10",
+            "gpu": "2gb gpu",
+            "cpu": "atleast 2ghz cpu"
+        },
+        "about": "From the creators of Arizona Sunshine® comes an epic VR action FPS with intense co-op gameplay at its core that pits up to 4 players against a post-apocalyptic VR world filled with ferocious undead, mutated and twisted by the relentless cold.",
+        "tags" : ["Open world", "Adventure", "Western", "Story rich"],
+        "status": 4
+    }
+]

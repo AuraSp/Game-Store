@@ -7,6 +7,7 @@ import react, { useState } from 'react';
 import Login from './Login/Login';
 import Register from './Register/Register';
 import Product from './Product/Product';
+import Support from './Components/Support/Support';
 
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
       {page == "login" && <Login setPage = {changePage} setUser = {setUser}/>}
       {page == "register" && <Register setPage = {changePage} setUser = {setUser}/>}
       {page == "product" && <Product setPage = {changePage} productInfo = {product}/>}
+
+
+      
       <Footer/>
     </div>
   );

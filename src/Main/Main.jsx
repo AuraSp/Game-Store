@@ -1,5 +1,8 @@
 import React from 'react'
 import './Main.css';
+import Data from '../Data/Data.json';
+import Bigitem from './Bigitem/Bigitem';
+import Mediumitem from './Mediumitem/Mediumitem';
 
 const Main = (props) => {
 
@@ -77,6 +80,8 @@ const Main = (props) => {
     props.setProduct(name, price, videoUrl);
   }
 
+  console.log(Data[0])
+
 
   return (
     <main>
@@ -87,116 +92,9 @@ const Main = (props) => {
             <button class="prevBtn cBtn" onClick={(e) =>{slide(1, "prev")}}>&#8592;</button>
             <div class="carousel">
               <div class="inner">
-                <div class="item">
-                  <div class="item1BigImg">
-                    <video width="470" class="videoPlayer"controls>
-                      <source src="https://cdn.akamai.steamstatic.com/steam/apps/256863087/movie480_vp9.webm?t=1638454279.mp4" type="video/mp4"/>
-                    </video>
-                  </div>
-                  <div class="itemBigHalf2">  
-                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct("After the Fall", 31.99, "https://cdn.akamai.steamstatic.com/steam/apps/256863087/movie480_vp9.webm?t=1638454279.mp4" )}}>After the Fall</a> </div>
-                    <div class="item1Group">
-                      <div class="slot slot1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_183b756588307e023d442a63081616160086159c.1920x1080.jpg?t=1643903019" alt=""/></div>
-                      <div class="slot slot2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_6fdda1946269f2b38663508927b296a982e60fa9.1920x1080.jpg?t=1643903019" alt=""/></div>
-                      <div class="slot slot3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_136ae602216b3fabbd0f6210bf129470f2e6c70c.1920x1080.jpg?t=1643903019" alt=""/></div>
-                      <div class="slot slot4"><img src="https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_e78f8b8c829d2661ced1d9d792f264eb220bf2ed.1920x1080.jpg?t=1643903019" alt=""/></div>
-                    </div>
-                    <div class="item1UnderInfo">
-                      <div class="item1Tags">
-                        <div class="tag">Action</div>
-                        <div class="tag">Adventure</div>
-                        <div class="tag">Co-op</div>
-                        <div class="tag">Gore</div>
-                      </div>
-                      <div class="item1PriceContainer">  
-                        <div class="item1Price"><button class="item1Button">Buy 31,99$</button></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item1BigImg">
-                    <video width="470" class="videoPlayer" controls>
-                     <source src="https://cdn.akamai.steamstatic.com/steam/apps/256864004/movie480_vp9.webm?t=1639001817.mp4" type="video/mp4"/>
-                  </video>
-                </div>
-                  <div class="itemBigHalf2">
-                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct("God of War", 49.99, "https://cdn.akamai.steamstatic.com/steam/apps/256864004/movie480_vp9.webm?t=1639001817.mp4" )}}>God of War</a> </div>
-                    <div class="item1Group">
-                      <div class="slot slot1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_6eccc970b5de2943546d93d319be1b5c0618f21b.600x338.jpg?t=1642526157" alt=""/></div>
-                      <div class="slot slot2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_3670ba72c7e3e9c3c3225547ef2c1053504e62b8.600x338.jpg?t=1642526157" alt=""/></div>
-                      <div class="slot slot3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_93a3ca63aa2cd8c675bbb6430324ee3f2d44b845.600x338.jpg?t=1642526157" alt=""/></div>
-                      <div class="slot slot4"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_0858b868ea51d53f73bd805ba7382f027dd33dca.600x338.jpg?t=1642526157" alt=""/></div>
-                    </div>
-                    <div class="item1UnderInfo">
-                      <div class="item1Tags">
-                        <div class="tag">Action</div>
-                        <div class="tag">Adventure</div>
-                        <div class="tag">RPG</div>
-                        <div class="tag">Mythology</div>
-                      </div>
-                      <div class="item1PriceContainer">
-                        <div class="item1Price"><button class="item1Button">Buy 49,99$</button></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item1BigImg">
-                    <video width="470" class="videoPlayer" controls>
-                      <source src="https://cdn.akamai.steamstatic.com/steam/apps/256768371/movie480.webm?t=1574881352.mp4" 
-                      type="video/mp4"/>
-                    </video>
-                  </div>
-                  <div class="itemBigHalf2">
-                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct("Red Dead Redemption 2", 59.99, "https://cdn.akamai.steamstatic.com/steam/apps/256768371/movie480.webm?t=1574881352.mp4" )}}>Red Dead Redemption 2</a></div>
-                    <div class="item1Group">
-                      <div class="slot slot1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_66b553f4c209476d3e4ce25fa4714002cc914c4f.600x338.jpg?t=1618851907" alt=""/></div>
-                      <div class="slot slot2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_bac60bacbf5da8945103648c08d27d5e202444ca.600x338.jpg?t=1618851907" alt=""/></div>
-                      <div class="slot slot3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_668dafe477743f8b50b818d5bbfcec669e9ba93e.600x338.jpg?t=1618851907" alt=""/></div>
-                      <div class="slot slot4"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_4ce07ae360b166f0f650e9a895a3b4b7bf15e34f.600x338.jpg?t=1618851907" alt=""/></div>
-                    </div>
-                    <div class="item1UnderInfo">
-                      <div class="item1Tags">
-                        <div class="tag">Open world</div>
-                        <div class="tag">Adventure</div>
-                        <div class="tag">Western</div>
-                        <div class="tag">Story rich</div>
-                      </div>
-                      <div class="item1PriceContainer">
-                        <div class="item1Price"><button class="item1Button">Buy 59,99$</button></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item1BigImg">
-                    <video width="470" class="videoPlayer" controls>
-                      <source src="https://cdn.akamai.steamstatic.com/steam/apps/256776470/movie480.webm?t=1585225680.mp4" 
-                      type="video/mp4"/>
-                    </video>
-                  </div>
-                  <div class="itemBigHalf2">
-                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct("Half-Life: Alyx", 49.99, "https://cdn.akamai.steamstatic.com/steam/apps/256776470/movie480.webm?t=1585225680.mp4" )}}>Half-Life: Alyx</a> </div>
-                    <div class="item1Group">
-                      <div class="slot slot1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_da44890033fe83bc27351b94ed8e795a2711719e.600x338.jpg?t=1598283504" alt=""/></div>
-                      <div class="slot slot2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_a9aaa43921663eb22b41391a7d35760cc1195d97.600x338.jpg?t=1598283504" alt=""/></div>
-                      <div class="slot slot3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_f2b7c606dd2b1d68c9920bdb839dfb897e2384ee.600x338.jpg?t=1598283504" alt=""/></div>
-                      <div class="slot slot4"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_7a0cd4c786037c8fcb30bc072271b37a16624fba.600x338.jpg?t=1598283504" alt=""/></div>
-                    </div>
-                    <div class="item1UnderInfo">
-                      <div class="item1Tags">
-                        <div class="tag">Adventure</div>
-                        <div class="tag">Puzzle</div>
-                        <div class="tag">VR</div>
-                        <div class="tag">Mystery</div>
-                      </div>
-                      <div class="item1PriceContainer">
-                        <div class="item1Price"><button class="item1Button">Buy 49,99$</button></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                {Data.map((product) =>(
+                    product.status == 0 && <Bigitem setProduct={clickedProduct} product={product}/>
+                ))}
               </div>
             </div>
             <button class="nextBtn cBtn" onClick={(e) =>{slide(1, "next")}}>&#8594;</button>
@@ -207,46 +105,9 @@ const Main = (props) => {
             <button class="prevBtn2 prev" onClick={(e) =>{slide(2, "prev")}}>&#8592;</button>
             <div class="carousel">
               <div class="inner2">
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256835424/movie.184x123.jpg?t=1622147945" alt=""/></a></div>
-                  <div class="item2Price"><a href="">59,99$</a> </div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256845668/movie.184x123.jpg?t=1628547580" alt=""/></a></div>
-                  <div class="item2Price"><a href="">59,99$</a></div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256871508/movie.184x123.jpg?t=1643929088" alt=""/></a></div>
-                  <div class="item2Price"><a href="">59,99$</a></div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256857413/movie.184x123.jpg?t=1635214015" alt=""/></a></div>
-                  <div class="item2Price"> <a href="">5$</a></div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256869812/movie.184x123.jpg?t=1642604430" alt=""/></a></div>
-                  <div class="item2Price"><a href="">59,99$</a></div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256774233/movie.184x123.jpg?t=1580855679" alt=""/></a></div>
-                  <div class="item2Price"><a href="">35,99$</a></div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256790450/movie.184x123.jpg?t=1592919273" alt=""/></a></div>
-                  <div class="item2Price"><a href=""> 4,79$</a></div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256864056/movie.184x123.jpg?t=1639008846" alt=""/></a></div>
-                  <div class="item2Price"><a href="">22,99$</a> </div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256811987/movie.184x123.jpg?t=1618921734" alt=""/></a></div>
-                  <div class="item2Price"><a href="">32,99$</a> </div>
-                </div>
-                <div class="item2">
-                  <div class="item2Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/256767815/movie.184x123.jpg?t=1583175736" alt=""/></a></div>
-                  <div class="item2Price"><a href="">49,99$</a> </div>
-                </div>
+                {Data.map((product) =>(
+                  product.status == 1 && <Mediumitem setProduct={clickedProduct} product={product}/>
+                ))}
               </div>
             </div>
             <button class="nextBtn2 prev " onClick={(e) =>{slide(2, "next")}}>&#8594;</button>
