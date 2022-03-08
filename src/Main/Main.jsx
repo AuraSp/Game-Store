@@ -1,7 +1,7 @@
 import React from 'react'
 import './Main.css';
 
-const Main = () => {
+const Main = (props) => {
 
   let cTranslate1 = 0;
   let cTranslate2 = 0;
@@ -71,7 +71,11 @@ const Main = () => {
       }
     }
   }
+  
 
+  function clickedProduct(name, price, videoUrl){
+    props.setProduct(name, price, videoUrl);
+  }
 
 
   return (
@@ -90,7 +94,7 @@ const Main = () => {
                     </video>
                   </div>
                   <div class="itemBigHalf2">  
-                    <div class="gameBigTitle"><a href="">After the Fall</a> </div>
+                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct("After the Fall", 31.99, "https://cdn.akamai.steamstatic.com/steam/apps/256863087/movie480_vp9.webm?t=1638454279.mp4" )}}>After the Fall</a> </div>
                     <div class="item1Group">
                       <div class="slot slot1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_183b756588307e023d442a63081616160086159c.1920x1080.jpg?t=1643903019" alt=""/></div>
                       <div class="slot slot2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/751630/ss_6fdda1946269f2b38663508927b296a982e60fa9.1920x1080.jpg?t=1643903019" alt=""/></div>
@@ -117,7 +121,7 @@ const Main = () => {
                   </video>
                 </div>
                   <div class="itemBigHalf2">
-                    <div class="gameBigTitle"><a href="">God of War</a> </div>
+                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct("God of War", 49.99, "https://cdn.akamai.steamstatic.com/steam/apps/256864004/movie480_vp9.webm?t=1639001817.mp4" )}}>God of War</a> </div>
                     <div class="item1Group">
                       <div class="slot slot1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_6eccc970b5de2943546d93d319be1b5c0618f21b.600x338.jpg?t=1642526157" alt=""/></div>
                       <div class="slot slot2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_3670ba72c7e3e9c3c3225547ef2c1053504e62b8.600x338.jpg?t=1642526157" alt=""/></div>
@@ -145,7 +149,7 @@ const Main = () => {
                     </video>
                   </div>
                   <div class="itemBigHalf2">
-                    <div class="gameBigTitle"><button class="item1Button">Red Dead Redemption 2</button> </div>
+                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct("Red Dead Redemption 2", 59.99, "https://cdn.akamai.steamstatic.com/steam/apps/256768371/movie480.webm?t=1574881352.mp4" )}}>Red Dead Redemption 2</a></div>
                     <div class="item1Group">
                       <div class="slot slot1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_66b553f4c209476d3e4ce25fa4714002cc914c4f.600x338.jpg?t=1618851907" alt=""/></div>
                       <div class="slot slot2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/ss_bac60bacbf5da8945103648c08d27d5e202444ca.600x338.jpg?t=1618851907" alt=""/></div>
@@ -173,7 +177,7 @@ const Main = () => {
                     </video>
                   </div>
                   <div class="itemBigHalf2">
-                    <div class="gameBigTitle"><a href="">Half-Life: Alyx</a> </div>
+                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct("Half-Life: Alyx", 49.99, "https://cdn.akamai.steamstatic.com/steam/apps/256776470/movie480.webm?t=1585225680.mp4" )}}>Half-Life: Alyx</a> </div>
                     <div class="item1Group">
                       <div class="slot slot1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_da44890033fe83bc27351b94ed8e795a2711719e.600x338.jpg?t=1598283504" alt=""/></div>
                       <div class="slot slot2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1104380/ss_a9aaa43921663eb22b41391a7d35760cc1195d97.600x338.jpg?t=1598283504" alt=""/></div>

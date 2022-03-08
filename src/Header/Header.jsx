@@ -9,10 +9,10 @@ const Header = (props) => {
     <header class="d-flex">
     <nav class="left-nav">
       <div class="store-logo">
-        <a href="#" id="homeTag"><img src="../img/LOGO.png" alt="Store logo" /></a>
+        <a href="#" onClick={(e) => {paging("main")}} id="homeTag"><img src="./LOGO.png" alt="Store logo" /></a>
       </div>
       <ul>
-        <li><a href="#">Store</a></li>
+        <li><a href="#" onClick={(e) => {paging("main")}}>Store</a></li>
         <li><a href="#">Community</a></li>
         <li><a href="#">Support</a></li>
       </ul>

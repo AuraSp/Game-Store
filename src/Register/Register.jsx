@@ -89,9 +89,13 @@ const Register = (props) => {
 
     }
   }
+
+  function closePage(){
+    props.setPage("main")
+  }
   return (
     <form className="registerForm" id="signUpForm" onSubmit={(e) => { submitRegistration(e) }}>
-      <button className='signUp-closeBtn'>X</button>
+      <button className='signUp-closeBtn' onClick={(e)=>{closePage()}}>X</button>
       <h2>CREATE YOUR PERSONAL ACCOUNT</h2>
       <p className='postTitle'>Join our community and enjoy a whole variety of games</p>
       <p class="errs">

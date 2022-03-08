@@ -36,7 +36,7 @@ const Footer = () => {
           <div className='fullWidthQuestionBtn'>
             <div class="closeFormBtn" onClick={(e) => {closeFAQ("first")}}>&times;</div>
           </div>
-          <p>EDGARAI ATSAKYK I KLAUSIMUS, THANKS</p>
+          <p>After receiving the game, even as a gift you will still have access to all of its features, however it may take some time for the purchase to process</p>
         </div>
 
         <p class='faqQuestions' onClick={(e) => {openFAQ("second")}}>How will know that I added exactly $5.00 USD to my
@@ -45,7 +45,7 @@ const Footer = () => {
         <div class="display-none second">
         <div className='fullWidthQuestionBtn'>
           <div class="closeFormBtn" onClick={(e) => {closeFAQ("second")}}>&times;</div></div>
-          <p>EDGARAI ATSAKYK I KLAUSIMUS, THANKS</p>
+          <p>Amount of money will be shown in your wallet when the process completes</p>
         </div>
 
         <p class='faqQuestions' onClick={(e) => {openFAQ("third")}}>I recently added Wallet funds but they have not appeared,
@@ -54,7 +54,7 @@ const Footer = () => {
         <div class="display-none third">
         <div className='fullWidthQuestionBtn'>
           <div class="closeFormBtn" onClick={(e) => {closeFAQ("third")}}>&times;</div></div>
-          <p>EDGARAI ATSAKYK I KLAUSIMUS, THANKS</p>
+          <p>Fund adding process takes a while to work, if the problem persists, contact us</p>
         </div>
 
         <p class='faqQuestions' onClick={(e) => {openFAQ("fourth")}}>What kind of Steam Wallet and item listing restrictions
@@ -63,7 +63,7 @@ const Footer = () => {
         <div class="display-none fourth">
         <div className='fullWidthQuestionBtn'>
           <div class="closeFormBtn" onClick={(e) => {closeFAQ("fourth")}}>&times;</div></div>
-          <p>EDGARAI ATSAKYK I KLAUSIMUS, THANKS</p>
+          <p>Steam wallet funds cannot be transfered trough the accounts, and gifting cannot be made to countries outside of Europe</p>
         </div>
 
 
@@ -90,7 +90,7 @@ const Footer = () => {
       </div>
 
       <div class="logo-end">
-        <div class="logo"><img src="../img/LOGO.png" alt="logo" /></div>
+        <div class="logo"><img src="./LOGO.png" alt="logo" /></div>
         <div class="endFooter">
           <p>
             © 2022 Internetinė žaidimų parduotuvė. All rights reserved. All

@@ -1,0 +1,38 @@
+.productPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.prodTitle{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 20px;
+}
+.prodPrice{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+    padding: 2%;
+    font-size: 20px;
+}
+.prodVideo{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prodBuyBtn{
+    width: 20%;
+    height: 80%;
+    margin-left: 2%;
+    background-color: lime;
+}
