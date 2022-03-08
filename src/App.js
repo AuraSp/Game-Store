@@ -8,11 +8,13 @@ import Login from './Login/Login';
 import Register from './Register/Register';
 import Product from './Product/Product';
 import Support from './Components/Support/Support';
+import Search from './Components/Search/Search';
 
 
 function App() {
   let [page, setPage] = useState("main")
   let [currentUser, setCurrentUser] = useState(0);
+  let [searchable, setSearchable] = useState("");
   let [product, setProduct] = useState(
     {name: "",
      price: 0,
@@ -20,11 +22,8 @@ function App() {
   )
   
 
-  console.log(page)
-
   function changePage(page){
     setPage(page)
-    console.log(page);
   }
   
   function settingProduct(prodName, prodPrice, prodUrl){
@@ -43,12 +42,13 @@ function App() {
   }
   return (
     <div className="App">
-      <Header setPage = {changePage} user={currentUser}/>
+      <Header setPage = {changePage} user={currentUser} setSearch={setSearchable} setUser = {setUser}/>
 
       {page == "main" && <Main setProduct={settingProduct}/>}
       {page == "login" && <Login setPage = {changePage} setUser = {setUser}/>}
       {page == "register" && <Register setPage = {changePage} setUser = {setUser}/>}
       {page == "product" && <Product setPage = {changePage} productInfo = {product}/>}
+      {page == "search" && <Search setProduct={settingProduct} searchTerm={searchable}/>}
 
 
       

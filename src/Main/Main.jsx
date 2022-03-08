@@ -3,6 +3,8 @@ import './Main.css';
 import Data from '../Data/Data.json';
 import Bigitem from './Bigitem/Bigitem';
 import Mediumitem from './Mediumitem/Mediumitem';
+import Tallitem from './Tallitem/Tallitem';
+import Thirdsmallitem from './Thirdsmallitem/Thirdsmallitem';
 
 const Main = (props) => {
 
@@ -80,9 +82,6 @@ const Main = (props) => {
     props.setProduct(name, price, videoUrl);
   }
 
-  console.log(Data[0])
-
-
   return (
     <main>
     <div class="mainPage d-default">
@@ -118,79 +117,26 @@ const Main = (props) => {
             <button class="prevBtn3 cBtn" onClick={(e) =>{slide(3, "prev")}}>&#10577;</button>
             <div class="carousel">
               <div class="inner3">
-                <div class="bigItem3">
-                  <div class="bigItem3Img"><img src="https://static.kinguin.net/cdn-cgi/image/h=630,q=80,fit=scale-down,f=auto/media/catalog/category/cache/1/hi_image/9df78eab33525d08d6e5fb8d27136e95/fffff800_1_1.jpeg" alt=""/></div>
-                  <div class="bigItem3Under">
-                    <div class="discount">-20%</div> 
-                    <div class="item3Sale"><a href=""> 39.99$</a> </div>
-                  </div>
-                </div>
-                <div class="itemGroup3">
-                  <div class="item3">
-                    <div class="bigItem3Img"><a href=""><img src="https://cdn.akamai.steamstatic.com/steam/apps/1426210/ss_a15164ddd357ab3c0b2aff575a6b215b2d91b406.1920x1080.jpg?t=1643015238" alt=""/></a></div>
-                    <div class="bigItem3Under">
-                      <div class="discount">-50%</div> 
-                      <div class="item3Sale"><a href=""> 9,99$</a> </div>
+                {Data.map((product) =>(
+                  product.status == 21 && <div className='slide3'>
+                    <Tallitem setProduct={clickedProduct} product={product}/>
+                    <div class="itemGroup3">
+                      {Data.map((product) =>(
+                        product.status== 3&& <Thirdsmallitem setProduct={clickedProduct} product={product}/>
+                      ))}
                     </div>
                   </div>
-                  <div class="item3">
-                    <div class="bigItem3Img"><a href=""><img src="https://cdn-products.eneba.com/resized-products/MMVtwdH_350x200_1x-0.jpg" alt=""/></a></div>
-                    <div class="bigItem3Under">
-                      <div class="discount">-34%</div> 
-                      <div class="item3Sale"><a href=""> 16.49$</a> </div>
+                ))}
+                {Data.map((product) =>(
+                  product.status == 22 && <div className='slide3'>
+                    <Tallitem setProduct={clickedProduct} product={product}/>
+                    <div class="itemGroup3">
+                      {Data.map((product) =>(
+                        product.status== 4&& <Thirdsmallitem setProduct={clickedProduct} product={product}/>
+                      ))}
                     </div>
                   </div>
-                  <div class="item3">
-                    <div class="bigItem3Img"><a href=""><img src="https://cdn-products.eneba.com/resized-products/7F73tyzSog3sF4VrNKAptXBlJOd6fytQ0_8QmStzkvQ_350x200_1x-0.jpeg" alt=""/></a></div>
-                    <div class="bigItem3Under">
-                      <div class="discount">-94% </div> 
-                      <div class="item3Sale"><a href="">0.84$</a> </div>
-                    </div>
-                  </div>
-                  <div class="item3">
-                    <div class="bigItem3Img"><a href=""><img src="https://cdn-products.eneba.com/resized-products/N0Omuykv9hcXyHRttSigBR3ZvlIj0fRBAHG5VSHkO94_350x200_1x-0.jpeg" alt=""/></a></div>
-                    <div class="bigItem3Under">
-                      <div class="discount">-72%</div> 
-                      <div class="item3Sale"><a href=""> 2.75$</a> </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bigItem3">
-                  <div class="bigItem3Img"><img src="https://cdn-products.eneba.com/resized-products/Xl1yxdDvS66HrBBK3wVM03JuBzJrcXmJyz91if0l2NA_350x200_1x-0.jpeg" alt=""/></div>
-                  <div class="bigItem3Under">
-                    <div class="discount">-10%</div> 
-                    <div class="item3Sale"><a href="">25.47$</a> </div>
-                  </div>
-                </div>
-                <div class="itemGroup3">
-                  <div class="item3">
-                    <div class="bigItem3Img"><a href=""><img src="https://cdn-products.eneba.com/resized-products/Cuu1GmaLMcoJZ7f1TTk3gLRJz17CWJZlBQIi1_PPymk_350x200_1x-0.jpeg" alt=""/></a></div>
-                    <div class="bigItem3Under">
-                      <div class="discount">-26%</div> 
-                      <div class="item3Sale"><a href=""> 36.99$</a> </div>
-                    </div>
-                  </div>
-                  <div class="item3">
-                    <div class="bigItem3Img"><a href=""><img src="https://cdn-products.eneba.com/resized-products/vjTU_Oa9q0awrM_i5rLmsoTRKnmQ8skpcznCpMuxzrI_350x200_1x-0.png" alt=""/></a></div>
-                    <div class="bigItem3Under">
-                      <div class="discount">-41%</div> 
-                      <div class="item3Sale"><a href=""> 9.99$</a> </div>
-                    </div>
-                  </div>
-                  <div class="item3">
-                    <div class="bigItem3Img"><a href=""><img src="https://cdn-products.eneba.com/resized-products/3egYgJJ_350x200_1x-0.jpg" alt=""/></a></div>
-                    <div class="bigItem3Under">
-                      <div class="discount">-82% </div> 
-                      <div class="item3Sale"><a href="">7.14$</a> </div>
-                    </div>
-                  </div>
-                  <div class="item3">
-                    <div class="bigItem3Img"><a href=""><img src="https://cdn-products.eneba.com/resized-products/HPo0XplBzFVhUebw35L9NzdE_RStz5QP5_Yj11Qa2vo_350x200_1x-0.jpeg" alt=""/></a></div>
-                    <div class="bigItem3Under">
-                      <div class="item3Sale"><a href="">6.49$</a> </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
             <button class="nextBtn3 cBtn" onClick={(e) =>{slide(3, "next")}}>&#10575;</button>

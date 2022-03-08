@@ -32,12 +32,13 @@ const Login = (props) => {
   }
 
 
-  function submitForm(){
+  function submitForm(e){
+    e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-
+        console.log(user)
         props.setUser(user);
         props.setPage("main")
         // ...
@@ -56,7 +57,7 @@ const Login = (props) => {
     <div className="loginBlock"> {/*loginPage*/}
       <div className="loginForm"> {/*item-1*/}
       <button className='signIn-closeBtn' onClick={(e)=>{closePage()}}>X</button>
-        <form onSubmit={(e) => {submitForm()}}>
+        <form onSubmit={(e) => {submitForm(e)}}>
           <h2>SIGN IN</h2>
           <input className="loginEmail-Input" onChange={(e)=>{changeLoginValue(e, "email")}} type="email" id="log-email" placeholder='Account email' required/>
           <input className="loginPassword-Input" onChange={(e)=>{changeLoginValue(e, "password")}} type="password" id="log-password" placeholder='Password' required/>

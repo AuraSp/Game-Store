@@ -31,7 +31,7 @@ const Register = (props) => {
 
 
   function changeData(e) {
-    if (e.target.id == "reg-username") {
+    if (e.target.id == "reg-name") {
       setUsername(e.target.value);
     }
     else if (e.target.id == "reg-surname") {
@@ -49,6 +49,7 @@ const Register = (props) => {
     else if (e.target.id == "repeat-password") {
       setRepeatPass(e.target.value);
     }
+    console.log(username)
   }
 
 
@@ -64,11 +65,11 @@ const Register = (props) => {
     if (regLegit) {
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
+          console.log(username)
           // Signed in 
           const user = userCredential.user;
-
           updateProfile(auth.currentUser, {
-            displayName: "Jane Q. User"
+            displayName: username
           }).then(() => {
             // Profile updated!
             props.setUser(user);
@@ -102,7 +103,7 @@ const Register = (props) => {
         {errList}
       </p>
       <div>
-      <input type="text" id="reg-Name" placeholder="Username" onChange={(e) => { changeData(e) }} required />
+      <input type="text" id="reg-name" placeholder="Username" onChange={(e) => { changeData(e) }} required />
       <input type="text" id="reg-surname" placeholder="Surname" onChange={(e) => { changeData(e) }} required />
       </div>
       <input type="email" id="reg-email" placeholder="Email" onChange={(e) => { changeData(e) }} required />
