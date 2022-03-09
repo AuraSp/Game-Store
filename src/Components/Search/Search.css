@@ -1,0 +1,26 @@
+.searchPage{
+    color: white;
+}
+.searchTerm{
+    text-align: center;
+}
+.searchResults{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.searchPage a{
+    color: white;
+    border: 2px solid black;
+    padding: 2%;
+    text-align: center;
+    background-color: gray;
+    text-decoration: none;
+    width: 80%;
+    border-radius: 5px;
+}
+.searchPage a:hover{
+    background-color: darkgray;
+}

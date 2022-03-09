@@ -1,0 +1,129 @@
+/*----- HEADER SECTIION -----*/
+.d-flex {
+    /* Header */
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5em;
+    color: white;
+  }
+  
+  .left-nav,
+  .right-nav {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    margin-top: 5em;
+  }
+  
+  .left-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 60%;
+  }
+  
+  .store-logo img {
+    /* Store Logo */
+    max-width: 130px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .left-nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 1em;
+    margin: 0;
+    border-bottom: 1px solid white;
+  
+  }
+  
+  .left-nav ul li {
+    padding: 0.5em;
+    font-size: 1.5em;
+    transition: 500ms ease-in-out;
+  }
+  
+  .left-nav li:hover {
+    border-radius: 15px;
+    box-shadow: 0 50px 10px #af83318e inset;
+  }
+  
+  .right-nav {
+    /* Headers' second part */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-basis: 40%;
+  }
+  
+  .regBtns {
+    display: inline-flex;
+  }
+  
+  .right-nav input{
+      padding: 2%;
+      width: 50%;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-bottom: 2px solid white;
+  }
+  .right-nav input::placeholder{
+      color: white;
+  }
+  .right-nav > ul{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    margin: 0 2em;
+    padding: 1em;
+    border-bottom: 1px solid white;
+  } 
+  
+  .right-nav ul li {
+    border-radius: 20px;
+    background-color: black;
+    padding: 0.8em;
+    margin: 0.1em;
+    font-size: 1em;
+    transition: 500ms ease-in-out;
+  }
+  
+  .right-nav ul li:hover {
+    box-shadow: 0 50px 10px #af83318e inset;
+    cursor: pointer;
+  } 
+  
+  .right-nav a,
+  .left-nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .right-nav .language-menu {
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    margin-top: 0.5em;
+    margin-left: -2.5em;
+    transition: all 0.5s ease;
+    min-width: 180px;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .right-nav > ul li:hover > .language-menu {
+    display: block;
+  }
+
+.navBtns{
+    display: flex;
+}
+
+.right-nav ul h3{
+    display: flex;
+    align-items: center;
+}
