@@ -1,5 +1,9 @@
 
 
+
+
+/* 
+
   .FAQ {
     margin: 0 250px;
     padding-bottom: 3px;
@@ -29,10 +33,10 @@
     margin: 0.5em 0 0 1em;
     padding: 0.2em;
     width: 50%;
-  }
+  } */
   
   /* Form display */
-  .display-none {
+  /* .display-none {
     display: none;
   }
   
@@ -76,9 +80,9 @@
     background-color: rgba(34, 34, 34, 0.337);
     border-radius: 15px;
   }
-  
+   */
   /* Inside form elements */
-  .closeFormBtn {
+  /* .closeFormBtn {
     display: block;
     width: 50px;
     padding: 0.3em;
@@ -91,7 +95,7 @@
     cursor: pointer;
   }
   
-  footer input[type='text'] { /* Account username, Topic */
+  footer input[type='text'] {
     padding: 1em;
     font-size: 0.9em;
     border: none;
@@ -109,8 +113,8 @@
   footer input:hover, #question:hover {
     background-color: darkgrey;
   }
-  
-  #question { /* Question area */
+   */
+  /* #question { 
     padding: 1em;
     font-size: 1.2em;
     width: 350px;
@@ -171,4 +175,61 @@
     width: 100%;
     background-color: #474747;
     padding: 1%;
+} */
+
+:root {
+  --background-faqSection: #928017e0;
+  --background-creditSection: #121214d2;
+}
+
+footer {
+color: white;
+}
+
+.faqSection {
+  background-color: var(--background-faqSection);
+  height: auto;
+}
+
+.logo-end {
+  background-color: var(--background-creditSection);
+  height: auto;
+}
+
+.logo-end img {
+  width: 5%;
+}
+
+.question {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.fTo button{
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  width: 400px;
+  height: 200px;
+}
+
+.sTo button{
+  background-color: blue;
+  cursor: pointer;
+  border: none;
+  width: 400px;
+  height: 200px;
+}
+
+.tTo button{
+  background-color: green;
+  cursor: pointer;
+  border: none;
+  width: 400px;
+  height: 200px;
 }
