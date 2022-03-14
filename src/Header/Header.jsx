@@ -24,9 +24,9 @@ const Header = (props) => {
       });
   }
   return (
-    <header class="d-flex">
-      <nav class="left-nav">
-        <div class="store-logo">
+    <header className="d-flex">
+      <nav className="left-nav">
+        <div className="store-logo">
           <a
             href="#"
             onClick={(e) => {
@@ -63,7 +63,7 @@ const Header = (props) => {
           </li>
         </ul>
       </nav>
-      <nav class="right-nav">
+      <nav className="right-nav">
         <input
           type="text"
           onChange={(e) => {
@@ -77,7 +77,7 @@ const Header = (props) => {
               <a href='#' onClick={(e)=>{
                 paging("cart");
               }}>CART</a>
-              <div class="regBtns">
+              <div className="regBtns">
                 <a
                   href="#"
                   onClick={(e) => {
@@ -100,7 +100,7 @@ const Header = (props) => {
               <a href="#">
                 <li>
                   Lietuvių | LT
-                  <ul class="language-menu">
+                  <ul className="language-menu">
                     <a href="#">
                       <li>Anglų | ENG</li>
                     </a>

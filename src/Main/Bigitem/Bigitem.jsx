@@ -9,29 +9,29 @@ function clickedProduct(name, price, videoUrl){
     }
 
   return (
-    <div class="item">
-                  <div class="item1BigImg">
-                    <video width="470" class="videoPlayer"controls>
+    <div className="item">
+                  <div className="item1BigImg">
+                    <video width="470" className="videoPlayer"controls>
                       <source src={product.trailerUrl} type="video/mp4"/>
                     </video>
                   </div>
-                  <div class="itemBigHalf2">  
-                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct(product.name, product.price, product.trailerUrl )}}>{product.name}</a> </div>
-                    <div class="item1Group">
-                      <div class="slot slot1"><img src={product.photo1} alt=""/></div>
-                      <div class="slot slot2"><img src={product.photo2} alt=""/></div>
-                      <div class="slot slot3"><img src={product.photo3} alt=""/></div>
-                      <div class="slot slot4"><img src={product.photo4} alt=""/></div>
+                  <div className="itemBigHalf2">  
+                    <div className="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct(product.name, product.price, product.trailerUrl )}}>{product.name}</a> </div>
+                    <div className="item1Group">
+                      <div className="slot slot1"><img src={product.photo1} alt=""/></div>
+                      <div className="slot slot2"><img src={product.photo2} alt=""/></div>
+                      <div className="slot slot3"><img src={product.photo3} alt=""/></div>
+                      <div className="slot slot4"><img src={product.photo4} alt=""/></div>
                     </div>
-                    <div class="item1UnderInfo">
-                      <div class="item1Tags">
-                        <div class="tag">{product.tags[0]} </div>
-                        <div class="tag">{product.tags[1]} </div>
-                        <div class="tag">{product.tags[2]} </div>
-                        <div class="tag">{product.tags[3]} </div>
+                    <div className="item1UnderInfo">
+                      <div className="item1Tags">
+                        <div className="tag">{product.tags[0]} </div>
+                        <div className="tag">{product.tags[1]} </div>
+                        <div className="tag">{product.tags[2]} </div>
+                        <div className="tag">{product.tags[3]} </div>
                       </div>
-                      <div class="item1PriceContainer">  
-                        <div class="item1Price"><button class="item1Button">Buy {product.price}</button></div>
+                      <div className="item1PriceContainer">  
+                        <div className="item1Price"><button className="item1Button">Buy {product.price}</button></div>
                       </div>
                     </div>
                   </div>

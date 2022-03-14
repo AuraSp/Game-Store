@@ -2,50 +2,16 @@ import React, { useState } from 'react';
 // import { FaWeixin } from "react-icons/fa";
 // import { IoWallet } from "react-icons/io5";
 // import { RiAccountCircleFill } from "react-icons/ri";
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
-// import { getDatabase, ref, addDoc } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+import { getDatabase, ref } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"
+import Basic from '../Data/BasicTopic';
+import Account from '../Data/AccountTopic';
+import Payment from '../Data/PaymentTopic';
 
 const Footer = (props) => {
   var database = props.db;
 
-  // const handleInput = () => {
-  //   database.ref("user").set({
-  //     name: email
-  //   }).catch(alert);
-  // }
-
-  // function handleInput(e) {
-  //   e.preventDefault()
-  //   showBasic(false)
-  //   let db = getDatabase(app);
-  //   const list = ref(db, 'g')
-  //   return addDoc(list, {
-  //     username: document.getElementById('name').value,
-  //     email: document.getElementById('question').value
-  //   });
-  // }
-  //   const app = initializeApp(firebaseConfig)
-  //   var messagesRef = firebase.database().ref('USERS ASKED QUESTIONS');
-  // function validation() {
-  //     event.preventDefault();
-
-  //     var newMessageRef = messagesRef.push();
-  //     newMessageRef.set(
-  //         {
-  //             name: document.getElementById('name').value,
-  //             message: document.getElementById('question').value
-
-  //         });
-
-  // }
-  //   var messagesRef = app.getDatabase().ref('USERS ASKED QUESTIONS');
-  //   function handleInput() {
-
-  //     set(ref(messagesRef, 'USERS ASKED QUESTIONS/'), {
-  //       name: document.getElementById('name').value,
-  //       question: document.getElementById('question').value
-  //     });
-  //   }
+  console.log(database)
 
   const [basic, showBasic] = useState(false);
   const [account, showAccount] = useState(false);
@@ -66,15 +32,6 @@ const Footer = (props) => {
     showPayment(!payment)
   }
 
-  function handleInput(e) {
-    e.preventDefault()
-    document.getElementsByName('input').value = "";
-    console.log(
-      "User email:" + email,
-      "Question:" + question
-    )
-  }
-
 
   return (
     <footer>
@@ -92,7 +49,7 @@ const Footer = (props) => {
               Question:</label>
             <textarea onChange={e => setQuestion(e.target.value)} id='question' type='textare' cols='45' rows='5' placeholder='basic' ></textarea>
             <div>
-              <input onChange={e => setEmail(e.target.value)} id='name' type="text" placeholder='Your email' />
+              <input onChange={e => setEmail(e.target.value)} id='email' type="text" placeholder='Your email' />
               <button disabled={question.length < 1 || email.length < 1}>Send</button>
             </div>
           </form>
@@ -155,3 +112,40 @@ const Footer = (props) => {
 }
 
 export default Footer
+
+  function handleInput() {
+  }
+
+
+  //   const app = initializeApp(firebaseConfig)
+  //   var messagesRef = firebase.database().ref('USERS ASKED QUESTIONS');
+  // function validation() {
+  //     event.preventDefault();
+
+  //     var newMessageRef = messagesRef.push();
+  //     newMessageRef.set(
+  //         {
+  //             name: document.getElementById('name').value,
+  //             message: document.getElementById('question').value
+
+  //         });
+
+  // }
+
+  //   var messagesRef = app.getDatabase().ref('USERS ASKED QUESTIONS');
+  //   function handleInput() {
+
+  //     set(ref(messagesRef, 'USERS ASKED QUESTIONS/'), {
+  //       name: document.getElementById('name').value,
+  //       question: document.getElementById('question').value
+  //     });
+  //   }
+
+
+    // const handleInput = (e) => {
+  //   e.preventDefault()
+  //   document.getElementsByName('input').value = "";
+  //   app.database().ref("user").set({
+  //     name: email
+  //   }).catch(alert);
+  // }

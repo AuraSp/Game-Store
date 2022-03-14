@@ -7,11 +7,11 @@ const Thirdsmallitem = (props) => {
         props.setProduct(name, price, trailer);
     }
   return (
-    <div class="item3">
-    <div class="bigItem3Img"><a href="#" className='expandImg' onClick={(e)=>{clickedProduct(product.name, product.price, product.trailerUrl )}}><img src={product.photo1} alt=""/></a></div>
-    <div class="bigItem3Under">
-      <div class="discount">-50%</div> 
-      <div class="item3Sale"><a href="#" onClick={(e)=>{clickedProduct(product.name, product.price, product.trailerUrl )}}>{product.price}</a> </div>
+    <div className="item3">
+    <div className="bigItem3Img"><a href="#" classNameName='expandImg' onClick={(e)=>{clickedProduct(product.name, product.price, product.trailerUrl )}}><img src={product.photo1} alt=""/></a></div>
+    <div className="bigItem3Under">
+      <div className="discount">-50%</div> 
+      <div className="item3Sale"><a href="#" onClick={(e)=>{clickedProduct(product.name, product.price, product.trailerUrl )}}>{product.price}</a> </div>
     </div>
   </div>
   )
