@@ -1,0 +1,21 @@
+.Community-container h1 {
+  text-align: center;
+}
+
+.Community-container {
+  margin: 0 2em;
+  background-color: rgb(94, 185, 185);
+}
+
+.Forum-list {
+  display: grid;
+  gap: 10px;
+  background-color: aqua;
+}
+
+.Review-list {
+  margin: 2em 0;
+  background-color: coral;
+  display: flex;
+  gap: 10px;
+}

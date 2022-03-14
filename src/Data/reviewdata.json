@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "review": "Game Name",
+    "about": "TEXT with the issues in game tell about  bugs or what it’s goodin game ",
+    "coverImg": "https://via.placeholder.com/50/09f/fff.png"
+  },
+  {
+    "id": 2,
+    "review": "Game Name",
+    "about": "TEXT with the issues in game tell about  bugs or what it’s goodin game ",
+    "coverImg": "https://via.placeholder.com/50/09f/fff.png"
+  },
+  {
+    "id": 3,
+    "review": "Game Name",
+    "about": "TEXT with the issues in game tell about  bugs or what it’s goodin game ",
+    "coverImg": "https://via.placeholder.com/50/09f/fff.png"
+  }
+]

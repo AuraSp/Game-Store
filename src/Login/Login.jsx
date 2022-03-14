@@ -1,22 +1,9 @@
 import React, { useState } from 'react'
 import './Login.css';
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, browserSessionPersistence } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
+import {signInWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, browserSessionPersistence } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
 
 
 const Login = (props) => {
-  const firebaseConfig = {
-    apiKey: "AIzaSyDA9Ez4i7vSWvq8uzvmmy8CMQ54x-EDRfs",
-    databaseURL: "https://derrastore-default-rtdb.europe-west1.firebasedatabase.app/",
-    authDomain: "derrastore.firebaseapp.com",
-    projectId: "derrastore",
-    storageBucket: "derrastore.appspot.com",
-    messagingSenderId: "70390486239",
-    appId: "1:70390486239:web:f0e884d634f8114597856a"
-  };
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth();
 
   let [email, setEmail] = useState("");
   let [password ,setPass] = useState("");
@@ -34,7 +21,7 @@ const Login = (props) => {
 
   function submitForm(e){
     e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(props.auth, email, password)
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
