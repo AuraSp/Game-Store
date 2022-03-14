@@ -2,16 +2,13 @@ import React, { useState } from 'react';
 // import { FaWeixin } from "react-icons/fa";
 // import { IoWallet } from "react-icons/io5";
 // import { RiAccountCircleFill } from "react-icons/ri";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
-import { getDatabase, ref } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"
 import Basic from '../Data/BasicTopic';
 import Account from '../Data/AccountTopic';
 import Payment from '../Data/PaymentTopic';
 
 const Footer = (props) => {
   var database = props.db;
-
-  console.log()
+  console.log(database)
 
   const [basic, showBasic] = useState(false);
   const [account, showAccount] = useState(false);
@@ -19,6 +16,11 @@ const Footer = (props) => {
 
   const [question, setQuestion] = useState('');
   const [email, setEmail] = useState('');
+
+    const handleInput = (e) => {
+    e.preventDefault()
+    document.getElementsByName('input').value = "";
+  }
 
   function closeBasic() {
     showBasic(!basic)
@@ -121,11 +123,9 @@ const Footer = (props) => {
 
 export default Footer
 
-  function handleInput() {
-  }
+function handleInput() {
+}
 
-
-  //   const app = initializeApp(firebaseConfig)
   //   var messagesRef = firebase.database().ref('USERS ASKED QUESTIONS');
   // function validation() {
   //     event.preventDefault();
