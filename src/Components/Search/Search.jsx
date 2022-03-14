@@ -3,11 +3,8 @@ import './Search.css'
 import Data from '../../Data/Data.json';
 
 const Search = (props) => {
-    let [searchTerm, setSearchTerm] = useState(props.searchTerm)
 
-    useEffect(() => {
-      setSearchTerm(props.searchTerm)
-    }, [props.searchTerm])
+
     Data.map((product) =>{
         console.log(product.name)
         console.log(props.searchTerm)

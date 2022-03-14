@@ -4,21 +4,9 @@ import React, { useState } from 'react';
 // import { RiAccountCircleFill } from "react-icons/ri";
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
 // import { getDatabase, ref, addDoc } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"
-import firebase from 'firebase';
 
-const Footer = () => {
-  const firebaseConfig = {
-    apiKey: "AIzaSyDA9Ez4i7vSWvq8uzvmmy8CMQ54x-EDRfs",
-    authDomain: "derrastore.firebaseapp.com",
-    databaseURL: "https://derrastore-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "derrastore",
-    storageBucket: "derrastore.appspot.com",
-    messagingSenderId: "70390486239",
-    appId: "1:70390486239:web:f0e884d634f8114597856a"
-  }
-
-  firebase.initializeApp(firebaseConfig);
-  var database = firebase.database();
+const Footer = (props) => {
+  var database = props.db;
 
   const [question, setQuestion] = useState('');
   const [email, setEmail] = useState('');

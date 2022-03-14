@@ -1,25 +1,8 @@
 import React, { useState } from "react"
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, browserSessionPersistence } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
+import {createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, browserSessionPersistence } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
 
 import "./Register.css";
 const Register = (props) => {
-  const firebaseConfig = {
-    apiKey: "AIzaSyDA9Ez4i7vSWvq8uzvmmy8CMQ54x-EDRfs",
-    databaseURL: "https://derrastore-default-rtdb.europe-west1.firebasedatabase.app/",
-    authDomain: "derrastore.firebaseapp.com",
-    projectId: "derrastore",
-    storageBucket: "derrastore.appspot.com",
-    messagingSenderId: "70390486239",
-    appId: "1:70390486239:web:f0e884d634f8114597856a"
-  };
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-  const auth = getAuth();
-
-
-
 
   let [username, setUsername] = useState("");
   let [surname, setSurname] = useState("");
@@ -63,12 +46,12 @@ const Register = (props) => {
       setErrlist(tempErrs)
     }
     if (regLegit) {
-      createUserWithEmailAndPassword(auth, email, password)
+      createUserWithEmailAndPassword(props.auth, email, password)
         .then((userCredential) => {
           console.log(username)
           // Signed in 
           const user = userCredential.user;
-          updateProfile(auth.currentUser, {
+          updateProfile(props.auth.currentUser, {
             displayName: username
           }).then(() => {
             // Profile updated!
