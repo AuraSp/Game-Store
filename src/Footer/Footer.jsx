@@ -11,7 +11,7 @@ import Payment from '../Data/PaymentTopic';
 const Footer = (props) => {
   var database = props.db;
 
-  console.log(database)
+  console.log()
 
   const [basic, showBasic] = useState(false);
   const [account, showAccount] = useState(false);
