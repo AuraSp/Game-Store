@@ -32,6 +32,12 @@ const Footer = (props) => {
     showPayment(!payment)
   }
 
+  const url = window.location.href
+
+  const copy = async () => {
+    await navigator.clipboard.writeText(url);
+    alert('URL: ' + url);
+  }
 
   return (
     <footer>
@@ -39,6 +45,8 @@ const Footer = (props) => {
       <h4>We've got you covered</h4>
       <p>See our most frequently asked questions below</p>
       <a href='#q2'>&#10576;Go link</a>
+      <button onClick={copy}>Share</button>
+      <input value={url}></input>
       <div className='d-flex flex-column mb-5'>
         <div>
           <button onClick={() => showBasic(true)}>BASIC</button>
