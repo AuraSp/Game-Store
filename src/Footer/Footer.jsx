@@ -4,7 +4,10 @@ import React, { useState } from 'react';
 // import { RiAccountCircleFill } from "react-icons/ri";
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
 // import { getDatabase, ref, addDoc } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"
-import firebase from 'firebase';
+// import firebase from 'firebase';
+import Basic from '../Data/BasicTopic';
+import Account from '../Data/AccountTopic';
+import Payment from '../Data/PaymentTopic';
 
 const Footer = () => {
   const firebaseConfig = {
@@ -17,30 +20,14 @@ const Footer = () => {
     appId: "1:70390486239:web:f0e884d634f8114597856a"
   }
 
-  firebase.initializeApp(firebaseConfig);
-  var database = firebase.database();
+  // firebase.initializeApp(firebaseConfig);
+  // var database = firebase.database();
 
-  const [question, setQuestion] = useState('');
-  const [email, setEmail] = useState('');
-
-  const handleInput = () => {
-    database.ref("user").set({
-      name: email
-    }).catch(alert);
-  }
-
-  // const firebaseConfig = {
-  //   apiKey: "AIzaSyDA9Ez4i7vSWvq8uzvmmy8CMQ54x-EDRfs",
-  //   authDomain: "derrastore.firebaseapp.com",
-  //   databaseURL: "https://derrastore-default-rtdb.europe-west1.firebasedatabase.app",
-  //   projectId: "derrastore",
-  //   storageBucket: "derrastore.appspot.com",
-  //   messagingSenderId: "70390486239",
-  //   appId: "1:70390486239:web:f0e884d634f8114597856a"
+  // const handleInput = () => {
+  //   database.ref("user").set({
+  //     name: email
+  //   }).catch(alert);
   // }
-
-  // const app = initializeApp(firebaseConfig);
-
 
   // function handleInput(e) {
   //   e.preventDefault()
@@ -79,8 +66,8 @@ const Footer = () => {
   const [account, showAccount] = useState(false);
   const [payment, showPayment] = useState(false);
 
-  // const [question, setQuestion] = useState('');
-  // const [email, setEmail] = useState('');
+  const [question, setQuestion] = useState('');
+  const [email, setEmail] = useState('');
 
   function closeBasic() {
     showBasic(!basic)
@@ -94,12 +81,14 @@ const Footer = () => {
     showPayment(!payment)
   }
 
-  // function handleInput() {
-  //   document.getElementsByName('input').value = "";
-  //   console.log(
-  //     "User email:" + email,
-  //     "Question:" + question
-  //   )
+  function handleInput(e) {
+    e.preventDefault()
+    document.getElementsByName('input').value = "";
+    console.log(
+      "User email:" + email,
+      "Question:" + question
+    )
+  }
 
 
   return (
@@ -126,7 +115,7 @@ const Footer = () => {
 
         <div>
           <button onClick={() => showAccount(true)}>ACCOUNT</button>
-          <form className={account ? 'd-block' : 'd-none'}>
+          <form onSubmit={(e) => handleInput(e)} className={account ? 'd-block' : 'd-none'}>
             <button onClick={() => closeAccount(true)}>&times;</button>
             <h5>Please state your question below. We will get back to you at the earliest!</h5>
             <label htmlFor='message'>
@@ -141,7 +130,7 @@ const Footer = () => {
 
         <div>
           <button onClick={() => showPayment(true)}>PAYMENT</button>
-          <form className={payment ? 'd-block' : 'd-none'}>
+          <form onSubmit={(e) => handleInput(e)} className={payment ? 'd-block' : 'd-none'}>
             <button onClick={() => closePayment(true)}>&times;</button>
             <h5>Please state your question below. We will get back to you at the earliest!</h5>
             <label htmlFor='message'>
@@ -155,9 +144,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <Basic />
+      <Basic />
       <Account />
-      <Payment /> */}
+      <Payment />
 
       <div className="logo-end">
         <div className="logo">
