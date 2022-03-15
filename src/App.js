@@ -21,10 +21,11 @@ function App() {
   let [product, setProduct] = useState(
     {name: "",
      price: 0,
-     videoURL: ""}
+     videoURL: "",
+      photos: []}
   )
 
-  let [cart, setCart] = useState([])
+  let [cart, setCart] = useState(["After the Fall", "God Of War"])
 
   const firebaseConfig = {
     apiKey: "AIzaSyDA9Ez4i7vSWvq8uzvmmy8CMQ54x-EDRfs",
@@ -56,11 +57,13 @@ function App() {
     setPage(page);
   }
 
-  function settingProduct(prodName, prodPrice, prodUrl) {
+  function settingProduct(prodName, prodPrice, prodUrl, photosList) {
+    console.log(photosList)
     let tempProduct = {
       name: prodName,
       price: prodPrice,
       videoUrl: prodUrl,
+      photos: photosList
     };
     setProduct(tempProduct);
     setPage("product");
@@ -93,7 +96,7 @@ function App() {
       )}
       {page == "community" && <Community />}
       {page == "cart" && <Cart cart={cart} setCart={setCart}/>}
-      <Footer />
+      <Footer db={db}/>
     </div>
   );
 }

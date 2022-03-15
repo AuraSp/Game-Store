@@ -4,8 +4,9 @@ import Data from '../..//Data/Data.json';
 const Bigitem = (props) => {
 
     let product = props.product
-function clickedProduct(name, price, videoUrl){
-    props.setProduct(name, price, videoUrl);
+  function clickedProduct(name, price, videoUrl, photos){
+    console.log(photos)
+    props.setProduct(name, price, videoUrl, photos);
     }
 
   return (
@@ -16,7 +17,7 @@ function clickedProduct(name, price, videoUrl){
                     </video>
                   </div>
                   <div class="itemBigHalf2">  
-                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct(product.name, product.price, product.trailerUrl )}}>{product.name}</a> </div>
+                    <div class="gameBigTitle"><a href="#" onClick={(e)=>{clickedProduct(product.name, product.price, product.trailerUrl, [product.photo2, product.photo3, product.photo4]  )}}>{product.name}</a> </div>
                     <div class="item1Group">
                       <div class="slot slot1"><img src={product.photo1} alt=""/></div>
                       <div class="slot slot2"><img src={product.photo2} alt=""/></div>

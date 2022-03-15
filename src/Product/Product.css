@@ -14,6 +14,14 @@
     width: 50%;
     font-size: 20px;
 }
+.productImages{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+}
+.productImages img{
+    width: 33%;
+}
 .prodPrice{
     color: white;
     display: flex;

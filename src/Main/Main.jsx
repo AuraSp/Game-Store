@@ -78,8 +78,9 @@ const Main = (props) => {
   }
   
 
-  function clickedProduct(name, price, videoUrl){
-    props.setProduct(name, price, videoUrl);
+  function clickedProduct(prod){
+    console.log(prod)
+    /* props.setProduct(name, price, videoUrl, photos); */
   }
 
   return (
@@ -105,7 +106,7 @@ const Main = (props) => {
             <div class="carousel">
               <div class="inner2">
                 {Data.map((product) =>(
-                  product.status == 1 && <Mediumitem setProduct={clickedProduct} product={product}/>
+                  product.status == 1 && <Mediumitem setProduct={clickedProduct(product)} product={product}/>
                 ))}
               </div>
             </div>

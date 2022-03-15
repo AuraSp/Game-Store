@@ -24,11 +24,13 @@ const Cart = (props) => {
     <div className='cartPage'>
         <div className='productsAndPrices'>
             {props.cart.map((product, index)=>(
-                <div>{product} Price: {Data.map((dataProduct) =>(
+                <div className='cartProduct'>
+                <div className='cartProductName'>{product},  Price: {Data.map((dataProduct) =>(
                     product == dataProduct.name && <div>{dataProduct.price}$</div>
-                ))}<a href="#" onClick={(e)=>{removeFromCart(product, index)}}>X</a></div>
+                ))}<a href="#" onClick={(e)=>{removeFromCart(product, index)}} className="cartDelete">X</a></div>
+                </div>
             ))}
-        <div>Total price: {totalPrice}$</div>
+        <div className='cartTotalPrice'>Total price: {totalPrice}$</div>
 
         </div>
     </div>
