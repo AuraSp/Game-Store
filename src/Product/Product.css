@@ -44,3 +44,19 @@
     margin-left: 2%;
     background-color: lime;
 }
+.productDesc{
+    width: 50%;
+    color: white;
+    background-color: gray;
+    font-size: 20px;
+}
+.productRequirements{
+    color: white;
+    background-color: gray;
+}
+.productRequirements h5{
+    border-bottom: 2px solid white;
+}
+.productRequirements ul{
+    list-style-type: none;
+}

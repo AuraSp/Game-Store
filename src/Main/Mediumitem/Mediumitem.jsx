@@ -4,9 +4,9 @@ const Mediumitem = (props) => {
     let product = props.product
 
   return (
-    <div class="item2">
-    <div class="item2Img"><a href="#" onClick={(e)=>{props.setProduct()}}><img src={product.photo1} alt=""/></a></div>
-    <div class="item2Price"><a href="">59,99$</a> </div>
+    <div className="item2">
+    <div className="item2Img"><a href={() => false} onClick={(e)=>{props.setProduct(product)}}><img src={product.photo1} alt=""/></a></div>
+    <div className="item2Price"><a href={() => false}>59,99$</a> </div>
     </div>
   )
 }

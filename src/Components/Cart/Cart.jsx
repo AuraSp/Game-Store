@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './Cart.css'
 import Data from '../../Data/Data.json';
 
@@ -11,11 +11,12 @@ const Cart = (props) => {
         }
     let totalPrice = 0;
 
-    props.cart.map((product)=>{
+    props.cart.forEach((product)=>{
         console.log(product)
-        Data.map((dataProd) =>{
-            if (product == dataProd.name){
+        Data.forEach((dataProd) =>{
+            if (product === dataProd.name){
                 totalPrice += dataProd.price
+                totalPrice = +totalPrice.toFixed(2)
             }
             console.log(totalPrice)
         })
@@ -26,8 +27,8 @@ const Cart = (props) => {
             {props.cart.map((product, index)=>(
                 <div className='cartProduct'>
                 <div className='cartProductName'>{product},  Price: {Data.map((dataProduct) =>(
-                    product == dataProduct.name && <div>{dataProduct.price}$</div>
-                ))}<a href="#" onClick={(e)=>{removeFromCart(product, index)}} className="cartDelete">X</a></div>
+                    product === dataProduct.name && <div>{dataProduct.price}$</div>
+                ))}<a href={() => false} onClick={(e)=>{removeFromCart(product, index)}} className="cartDelete">X</a></div>
                 </div>
             ))}
         <div className='cartTotalPrice'>Total price: {totalPrice}$</div>

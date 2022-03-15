@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Header.css';
 import {signOut} from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
 
@@ -24,11 +24,10 @@ const Header = (props) => {
       });
   }
   return (
-    <header class="d-flex">
-      <nav class="left-nav">
-        <div class="store-logo">
-          <a
-            href="#"
+    <header className="d-flex">
+      <nav className="left-nav">
+        <div className="store-logo">
+          <a href={() => false}
             onClick={(e) => {
               paging("main");
             }}
@@ -40,7 +39,7 @@ const Header = (props) => {
         <ul>
           <li>
             <a
-              href="#"
+              href={() => false}
               onClick={(e) => {
                 paging("main");
               }}
@@ -50,7 +49,7 @@ const Header = (props) => {
           </li>
           <li>
             <a
-              href="#"
+              href={() => false}
               onClick={(e) => {
                 paging("community");
               }}
@@ -59,11 +58,11 @@ const Header = (props) => {
             </a>
           </li>
           <li>
-            <a href="#">Support</a>
+            <a href={() => false}>Support</a>
           </li>
         </ul>
       </nav>
-      <nav class="right-nav">
+      <nav className="right-nav">
         <input
           type="text"
           onChange={(e) => {
@@ -72,14 +71,14 @@ const Header = (props) => {
           placeholder="Search"
         />
         <ul>
-          {props.user.displayName == undefined ? (
+          {props.user.displayName === undefined ? (
             <div className="navBtns">
-              <a href='#' onClick={(e)=>{
+              <a href={() => false} onClick={(e)=>{
                 paging("cart");
               }}>CART</a>
-              <div class="regBtns">
+              <div className="regBtns">
                 <a
-                  href="#"
+                  href={() => false}
                   onClick={(e) => {
                     paging("login");
                   }}
@@ -88,7 +87,7 @@ const Header = (props) => {
                   <li>Login</li>
                 </a>
                 <a
-                  href="#"
+                  href={() => false}
                   onClick={(e) => {
                     paging("register");
                   }}
@@ -97,14 +96,14 @@ const Header = (props) => {
                   <li>Sign up</li>
                 </a>
               </div>
-              <a href="#">
+              <a href={() => false}>
                 <li>
                   Lietuvių | LT
-                  <ul class="language-menu">
-                    <a href="#">
+                  <ul className="language-menu">
+                    <a href={() => false}>
                       <li>Anglų | ENG</li>
                     </a>
-                    <a href="#">
+                    <a href={() => false}>
                       <li>Lietuvių | LT</li>
                     </a>
                   </ul>
@@ -115,7 +114,7 @@ const Header = (props) => {
             <h3>
               {props.user.displayName}{" "}
               <a
-                href="#"
+                href={() => false}
                 onClick={(e) => {
                   logout();
                 }}

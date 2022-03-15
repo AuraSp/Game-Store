@@ -10,6 +10,10 @@ html {
   background-attachment: fixed;
 }
 
+a:hover{
+  cursor: pointer;
+}
+
 
 /*----- HEADER SECTIION END -----*/
 /*----- MAIN SECTIION -----*/

@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
-import react, { useState } from "react";
+import { useState } from "react";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 import Product from "./Product/Product";
@@ -11,21 +10,16 @@ import Support from "./Components/Support/Support";
 import Cart from "./Components/Cart/Cart";
 import Search from "./Components/Search/Search";
 import Community from "./Components/Community/Community";
-import {auth ,getAuth} from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
+import {getAuth} from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
+import { getDatabase} from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
 function App() {
   let [page, setPage] = useState("main");
   let [currentUser, setCurrentUser] = useState(0);
   let [searchable, setSearchable] = useState("");
-  let [product, setProduct] = useState(
-    {name: "",
-     price: 0,
-     videoURL: "",
-      photos: []}
-  )
+  let [product, setProduct] = useState(0)
 
-  let [cart, setCart] = useState(["After the Fall", "God Of War"])
+  let [cart, setCart] = useState(["God Of War"])
 
   const firebaseConfig = {
     apiKey: "AIzaSyDA9Ez4i7vSWvq8uzvmmy8CMQ54x-EDRfs",
@@ -40,12 +34,6 @@ function App() {
   const app = initializeApp(firebaseConfig);
   const auth = getAuth();
   const db = getDatabase(app);
-
-
-  function changeCart(tempCart){
-    console.log(tempCart)
-    setCart(tempCart)
-  }
   
   function addToCart(name){
     let tempCart = [...cart];
@@ -57,15 +45,8 @@ function App() {
     setPage(page);
   }
 
-  function settingProduct(prodName, prodPrice, prodUrl, photosList) {
-    console.log(photosList)
-    let tempProduct = {
-      name: prodName,
-      price: prodPrice,
-      videoUrl: prodUrl,
-      photos: photosList
-    };
-    setProduct(tempProduct);
+  function settingProduct(product) {
+    setProduct(product);
     setPage("product");
   }
 
@@ -83,19 +64,19 @@ function App() {
         auth={auth}
       />
 
-      {page == "main" && <Main setProduct={settingProduct} />}
-      {page == "login" && <Login setPage={changePage} setUser={setUser} />}
-      {page == "register" && (
+      {page === "main" && <Main setProduct={settingProduct} />}
+      {page === "login" && <Login setPage={changePage} setUser={setUser} />}
+      {page === "register" && (
         <Register setPage={changePage} setUser={setUser} />
       )}
-      {page == "product" && (
+      {page === "product" && (
         <Product setPage={changePage} productInfo={product} addToCart={addToCart} />
       )}
-      {page == "search" && (
+      {page === "search" && (
         <Search setProduct={settingProduct} searchTerm={searchable} />
       )}
-      {page == "community" && <Community />}
-      {page == "cart" && <Cart cart={cart} setCart={setCart}/>}
+      {page === "community" && <Community />}
+      {page === "cart" && <Cart cart={cart} setCart={setCart}/>}
       <Footer db={db}/>
     </div>
   );
