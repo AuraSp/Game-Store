@@ -6,23 +6,23 @@ export default function Account() {
     let data = [
         {
             id: 1,
-            question: "account",
-            answer: "d",
+            question: "ACCOUNT QUESTIONS",
+            answer: "ACCOUNT ANSWERS",
         },
         {
             id: 2,
-            question: "acc",
-            answer: "d",
+            question: "ACCOUNT QUESTIONS",
+            answer: "ACCOUNT ANSWERS",
         },
         {
             id: 3,
-            question: "acc",
-            answer: "d",
+            question: "ACCOUNT QUESTIONS",
+            answer: "ACCOUNT ANSWERS",
         },
         {
             id: 4,
-            question: "acc",
-            answer: "d",
+            question: "ACCOUNT QUESTIONS",
+            answer: "ACCOUNT ANSWERS",
         },
     ];
 

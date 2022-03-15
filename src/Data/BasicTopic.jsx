@@ -6,23 +6,23 @@ export default function Basic() {
     let data = [
         {
             id: 1,
-            question: "p",
-            answer: "d",
+            question: "BASIC QUESTIONS",
+            answer: "BASIC ANSWERS",
         },
         {
             id: 2,
-            question: "p",
-            answer: "d",
+            question: "BASIC QUESTIONS",
+            answer: "BASIC ANSWERS",
         },
         {
             id: 3,
-            question: "p",
-            answer: "d",
+            question: "BASIC QUESTIONS",
+            answer: "BASIC ANSWERS",
         },
         {
             id: 4,
-            question: "p",
-            answer: "d",
+            question: "BASIC QUESTIONS",
+            answer: "BASIC ANSWERS",
         },
     ];
 

@@ -6,23 +6,23 @@ export default function Payment() {
     let data = [
         {
             id: 1,
-            question: "account",
-            answer: "d",
+            question: "PAYMENT QUESTIONS",
+            answer: "PAYMENT ANSWERS",
         },
         {
             id: 2,
-            question: "acc",
-            answer: "d",
+            question: "PAYMENT QUESTIONS",
+            answer: "PAYMENT ANSWERS",
         },
         {
             id: 3,
-            question: "acc",
-            answer: "d",
+            question: "PAYMENT QUESTIONS",
+            answer: "PAYMENT ANSWERS",
         },
         {
             id: 4,
-            question: "acc",
-            answer: "d",
+            question: "PAYMENT QUESTIONS",
+            answer: "PAYMENT ANSWERS",
         },
     ];
 
