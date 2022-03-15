@@ -93,7 +93,7 @@ function App() {
       )}
       {page == "community" && <Community />}
       {page == "cart" && <Cart cart={cart} setCart={setCart}/>}
-      <Footer />
+      <Footer db={db}/>
     </div>
   );
 }

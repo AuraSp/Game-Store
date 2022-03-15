@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 // import { FaWeixin } from "react-icons/fa";
 // import { IoWallet } from "react-icons/io5";
 // import { RiAccountCircleFill } from "react-icons/ri";
+import { getDatabase, ref, set, push, child } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
 import Basic from '../Data/BasicTopic';
 import Account from '../Data/AccountTopic';
 import Payment from '../Data/PaymentTopic';
 
 const Footer = (props) => {
   var database = props.db;
-  console.log(database)
 
   const [basic, showBasic] = useState(false);
   const [account, showAccount] = useState(false);
@@ -17,13 +17,18 @@ const Footer = (props) => {
   const [question, setQuestion] = useState('');
   const [email, setEmail] = useState('');
 
-    const handleInput = (e) => {
+  function handleInput(e) {
     e.preventDefault()
-    document.getElementsByName('input').value = "";
+    const refs = ref(database, 'USERS ASKED QUESTIONS/');
+    const newPostRef = push(refs);
+    set((newPostRef), {
+      User_email: document.getElementById('email').value,
+      User_question: document.getElementById('question').value,
+    });
   }
 
-  function closeBasic() {
-    showBasic(!basic)
+  function closeBasic(e) {
+    showBasic(false)
   }
 
   function closeAccount() {
@@ -53,11 +58,11 @@ const Footer = (props) => {
         <div>
           <button onClick={() => showBasic(true)}>BASIC</button>
           <form onSubmit={(e) => handleInput(e)} className={basic ? 'd-block' : 'd-none'}>
-            <button onClick={() => closeBasic(true)}>&times;</button>
+          <button onClick={(e) => closeBasic(e)}>&times;</button>
             <h5>Please state your question below. We will get back to you at the earliest!</h5>
             <label htmlFor='message'>
               Question:</label>
-            <textarea onChange={e => setQuestion(e.target.value)} id='question' type='textare' cols='45' rows='5' placeholder='basic' ></textarea>
+            <textarea onChange={e => setQuestion(e.target.value)} id='question' type='textarea' cols='45' rows='5' placeholder='basic'></textarea>
             <div>
               <input onChange={e => setEmail(e.target.value)} id='email' type="text" placeholder='Your email' />
               <button disabled={question.length < 1 || email.length < 1}>Send</button>
@@ -72,7 +77,7 @@ const Footer = (props) => {
             <h5>Please state your question below. We will get back to you at the earliest!</h5>
             <label htmlFor='message'>
               Question:</label>
-            <textarea onChange={e => setQuestion(e.target.value)} type='textare' cols='45' rows='5' placeholder='basic'></textarea>
+            <textarea onChange={e => setQuestion(e.target.value)} type='textarea' cols='45' rows='5' placeholder='basic'></textarea>
             <div>
               <input onChange={e => setEmail(e.target.value)} type="text" placeholder='Your email' />
               <button disabled={question.length < 1 || email.length < 1} >Send</button>
@@ -87,7 +92,7 @@ const Footer = (props) => {
             <h5>Please state your question below. We will get back to you at the earliest!</h5>
             <label htmlFor='message'>
               Question:</label>
-            <textarea onChange={e => setQuestion(e.target.value)} type='textare' cols='45' rows='5' placeholder='basic' ></textarea>
+            <textarea onChange={e => setQuestion(e.target.value)} type='textarea' cols='45' rows='5' placeholder='basic' ></textarea>
             <div>
               <input onChange={e => setEmail(e.target.value)} type="text" placeholder='Your email' />
               <button disabled={question.length < 1 || email.length < 1}>Send</button>
@@ -116,44 +121,8 @@ const Footer = (props) => {
           </p>
         </div>
       </div>
-
     </footer>
   )
 }
 
 export default Footer
-
-function handleInput() {
-}
-
-  //   var messagesRef = firebase.database().ref('USERS ASKED QUESTIONS');
-  // function validation() {
-  //     event.preventDefault();
-
-  //     var newMessageRef = messagesRef.push();
-  //     newMessageRef.set(
-  //         {
-  //             name: document.getElementById('name').value,
-  //             message: document.getElementById('question').value
-
-  //         });
-
-  // }
-
-  //   var messagesRef = app.getDatabase().ref('USERS ASKED QUESTIONS');
-  //   function handleInput() {
-
-  //     set(ref(messagesRef, 'USERS ASKED QUESTIONS/'), {
-  //       name: document.getElementById('name').value,
-  //       question: document.getElementById('question').value
-  //     });
-  //   }
-
-
-    // const handleInput = (e) => {
-  //   e.preventDefault()
-  //   document.getElementsByName('input').value = "";
-  //   app.database().ref("user").set({
-  //     name: email
-  //   }).catch(alert);
-  // }
