@@ -30,9 +30,9 @@
 .questions p{
     width: 19.5em;
     padding-left: 20px;
-    height: 2em;
+    /* height: 2em; */
 }
-.button, .buttonItem{
+.button, .buttonItem, .buttonItem2,.buttonItem3{
     font-size: 2em;
     margin-right: 1em;
     border: 20px solid red;
@@ -62,18 +62,22 @@ textarea, .hideButton{
     background-color: rgb(172, 99, 99);
     width: 19.5em;
     padding-left: 20px;
-    margin-top: 3em;
+    margin-top: 1.5em;
     height: 2.5em;
     display: flex;
+    margin-left: 2em;
 }
 .allItem{
- display: none;
- height: 50vh;
+    display: none;
+ height: 30vh;
+ background-color: white;
+ flex-direction: column;
+ width: 40%;
 }
 
 
 .show{
-    display:inline;
+    display:flex;
 }
 .hide{
     display: none;
