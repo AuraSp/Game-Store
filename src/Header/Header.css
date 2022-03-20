@@ -3,7 +3,7 @@
     /* Header */
     display: flex;
     flex-flow: row wrap;
-    padding: 0.5em;
+    padding: 0 0.5em 0.5em 0.5em;
     color: white;
   }
   
@@ -12,7 +12,7 @@
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
-    margin-top: 5em;
+    margin-top: 2.5em;
   }
   
   .left-nav {
