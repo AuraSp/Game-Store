@@ -112,6 +112,10 @@ const Footer = (props) => {
     await navigator.clipboard.writeText(url);
   }
 
+  function paging(page) {
+    props.setPage(page);
+  }
+
   return (
     <footer className='text-light'>
       {/* <div>{success}</div> */}
@@ -181,7 +185,12 @@ const Footer = (props) => {
           <div className='quicklinks'>
           <h4>Quick Links</h4>
           <div className='displayflexlinks'>
-          <a>Home</a>
+          <a
+          href={() => false}
+          onClick={(e) => {
+            paging("main");
+          }}
+          >Home</a>
           <a>Community</a>
           <a>Support</a>
           </div>
