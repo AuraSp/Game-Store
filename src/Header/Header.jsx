@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css';
+import { BsCartCheck } from "react-icons/bs";
 import {signOut} from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
 
 const Header = (props) => {
@@ -61,8 +62,6 @@ const Header = (props) => {
             <a href={() => false}>Support</a>
           </li>
         </ul>
-      </nav>
-      <nav className="right-nav">
         <input
           type="text"
           onChange={(e) => {
@@ -70,12 +69,14 @@ const Header = (props) => {
           }}
           placeholder="Search"
         />
+      </nav>
+      <nav className="right-nav">
         <ul>
           {props.user.displayName === undefined ? (
             <div className="navBtns">
               <a href={() => false} onClick={(e)=>{
                 paging("cart");
-              }}>CART</a>
+              }}><BsCartCheck/>CART</a>
               <div className="regBtns">
                 <a
                   href={() => false}

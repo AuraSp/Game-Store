@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { FaWeixin } from "react-icons/fa";
 import { IoWallet } from "react-icons/io5";
 import { RiAccountCircleFill } from "react-icons/ri";
+import { FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
+
 import { ref, set, push } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
 import Basic from '../Data/BasicTopic';
 import Account from '../Data/AccountTopic';
 import Payment from '../Data/PaymentTopic';
+import './Footer.css';
 
 const Footer = (props) => {
   var database = props.db;
@@ -23,7 +26,7 @@ const Footer = (props) => {
 
   useEffect(() => {
     setTimeout(() => { setSucc("") }, 5000);
-    setTimeout(() => { setCopy("") }, 5500);
+    setTimeout(() => { setCopy("") }, 2500);
   }, [success, copied])
 
   function nullQuestions() {
@@ -40,7 +43,7 @@ const Footer = (props) => {
     if (qType === "basic") {
       showBasic(!basic)
       if (question.length && email.length < 1) {
-        
+
       }
       const refs = ref(database, 'Basic Questions/');
       const newPostRef = push(refs);
@@ -111,14 +114,10 @@ const Footer = (props) => {
 
   return (
     <footer className='text-light'>
-      <div>{success}</div>
-      <h2>FAQ! NEED HELP?</h2>
-      <h4>We've got you covered</h4>
-      <div>{copied}</div>
-      <a href='#q2'>&#10576;Go link</a>
-      <button onClick={copy}>Share</button>
-      <input value={url}></input>
-      <div className='m-3'>
+      {/* <div>{success}</div> */}
+      {/* <h2>FAQ! NEED HELP?</h2>
+      <h4>We've got you covered</h4> */}
+      {/* <div className='m-3'>
         <button onClick={() => openForm("basic")}><FaWeixin/>BASIC</button>
         <div className={basic ? 'd-block' : 'd-none'}>
           <form onSubmit={(e) => questionInput(e, "basic")}>
@@ -171,17 +170,37 @@ const Footer = (props) => {
 
       <Basic />
       <Account />
-      <Payment />
+      <Payment /> */}
 
       <div className="logo-end">
-        <div className="logo">
-          <img src="./LOGO.png" alt="logo" />
+        <div className='shareSection'>
+          <div className="logo">
+            <img src="./LOGO.png" alt="logo" />
+          </div>
+          <div className='shareBlock'>
+            <div className='follow'>
+              <h4>Follow Us</h4>
+              <div className='displayflex'>
+                <p><FaLinkedin /></p>
+                <p><FaTwitter /></p>
+                <p><FaDiscord /></p>
+              </div>
+            </div>
+            <div className='share'>
+            <h4>Share Us</h4>
+            <div className='displayflexshare'>
+              <button onClick={copy}>Share</button>
+              <input value={url} readOnly></input>
+              <div className='copied'>{copied}</div>
+            </div>
+            </div>
+          </div>
         </div>
         <div className="endFooter">
           <p>
             © 2022 Internetinė žaidimų parduotuvė. All rights reserved. All
             trademarks are property of their respective owners in the LTU and
-            other countries.
+            other countries
           </p>
           <p>
             VAT included in all prices where applicable. Privacy Policy |
