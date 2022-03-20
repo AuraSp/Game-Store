@@ -6,24 +6,27 @@ import SupportItem from './SupportItem';
 const Support = () => {
 
     return (
-        
-            <main class = "main">
-                <div class = "name">
-                    <h2>SUPPORT</h2>
+
+        <main className="main">
+            <div className="name">
+                <h2>SUPPORT</h2>
+            </div>
+
+            <div className="questions">
+                <div className='leftSection'>
+                    <SupportItem name={"Games, Software"} q1={"Game not working?"} q2={"Haven't received a game?"} q3={"Sound not working?"} />
+                    <SupportItem name={"Purchases"} q1={"Did not receive the goods?"} q2={"Issues with paying?"} q3={"Bad quality?"} />
+                    <SupportItem name={"MyAccount"} q1={"Can't log in?"} q2={"Forgot password?"} q3={"Didn't get the Guard?"} />
                 </div>
-                
-                <div class = "questions">
-                  
-                        <SupportItem name = {"Games, Software"} q1 = {"game not working?"} q2 = {"haven't got a game?"} q3 = {"sound not working?"}/>
-                        <SupportItem name = {"Purchases"} q1 = {"did not receive the goods?"} q2 = {"don't can pay?"} q3 = {"bad quality?"}/>
-                        <SupportItem name = {"MyAccount"} q1 = {"can't come in?"} q2 = {"forgot password?"} q3 = {"dont get Guard?"}/>
-                        <SupportItem name = {"Client"} q1 = {"Can't Contact Login Servers?"} q2 = {"you to find error?"} q3 = {"no money came?"}/>
-                        <SupportItem name = {"Community"} q1 = {"Steam Account was stolen and I need help recovering it?"} q2 = {"not receiving a Steam Guard code?"} q3 = {"deleted or lost my Steam Guard Mobile Authenticator?"}/>
-                        <SupportItem name = {"Giftcards"} q1 = {"dont get cards?"} q2 = {"dont work cards?"} q3 = {"dont can buy cards?"}/>
+                <div className='rightSection'>
+                    <SupportItem name={"Client"} q1={"Can't contact login servers?"} q2={"You to find error?"} q3={"No money came?"} />
+                    <SupportItem name={"Community"} q1={"Steam account was stolen and need help to recover it?"} q2={"Not receiving a Steam Guard code?"} q3={"Deleted or lost my Steam Guard mobile authenticator?"} />
+                    <SupportItem name={"Giftcards"} q1={"Can't receive your cards?"} q2={"Cards doesn't work?"} q3={"Can't buy cards?"} />
                 </div>
-            </main>
-       
-        
+            </div>
+        </main>
+
+
     )
 }
 

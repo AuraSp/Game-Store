@@ -21,42 +21,42 @@ export default function SupportItem(props) {
         }
     }
   return (
-    <div class = "mainSupport"> 
-        <div class = "supportBlock oneBlock">
+    <div className = "mainSupport"> 
+        <div className = "supportBlock oneBlock">
             <p>{props.name}</p>
-           <div class = "icon"><FontAwesomeIcon onClick={(e) => {qShow()}} icon={ faAngleDown } /></div> 
+           <div className = "icon"><FontAwesomeIcon onClick={(e) => {qShow()}} icon={ faAngleDown } /></div> 
     </div>
     {qOpened == true &&
-    <div class = "allItem">
-                <div class = "supportItem oneItem">
+    <div className = "allItem">
+                <div className = "supportItem oneItem">
             <p>{props.q1}</p>
-            <div class = "icon"><FontAwesomeIcon onClick={(e) => {openQ("q1")}} icon={ faAngleDown } /></div>
+            <div className = "icon"><FontAwesomeIcon onClick={(e) => {openQ("q1")}} icon={ faAngleDown } /></div>
             
             {q1 == true &&
             <div>
                 <textarea name="" id="supportGamesSoftwere1"  placeholder='describe what is not so and we will reply as soon as possible'></textarea> 
-                <button class = "sendButton">send</button>
+                <button className = "sendButton">send</button>
             </div>
             }
         </div>
-        <div class = "supportItem twoItem">
+        <div className = "supportItem twoItem">
             <p>{props.q2}</p>
-           <div class = "icon"> <FontAwesomeIcon onClick={(e) => {openQ("q2")}} icon={ faAngleDown } /></div>
+           <div className = "icon"> <FontAwesomeIcon onClick={(e) => {openQ("q2")}} icon={ faAngleDown } /></div>
 
             {q2 == true &&
             <div>
                 <textarea name="" id="supportGamesSoftwere2"  placeholder='describe what is not so and we will reply as soon as possible'></textarea> 
-                <button class = "sendButton">send</button>
+                <button className = "sendButton">send</button>
             </div>
     }
          </div>
-        <div class = "supportItem threeItem">
+        <div className = "supportItem threeItem">
             <p>{props.q3}</p>
-           <div class = "icon"><FontAwesomeIcon onClick={(e) => {openQ("q3")}} icon={ faAngleDown } /></div> 
+           <div className = "icon"><FontAwesomeIcon onClick={(e) => {openQ("q3")}} icon={ faAngleDown } /></div> 
             {q3 == true &&
             <div>
                 <textarea name="" id="supportGamesSoftwere2"  placeholder='describe what is not so and we will reply as soon as possible'></textarea> 
-                <button class = "sendButton">send</button>
+                <button className = "sendButton">send</button>
             </div>
     }
         </div>
