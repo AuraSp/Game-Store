@@ -3,7 +3,9 @@ import './Support.css';
 import SupportItem from './SupportItem';
 
 
-const Support = () => {
+const Support = (props) => {
+var database=props.db
+console.log(database)
 
     return (
 

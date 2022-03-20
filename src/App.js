@@ -76,7 +76,7 @@ function App() {
         <Search setProduct={settingProduct} searchTerm={searchable} />
       )}
       {page === "community" && <Community />}
-      {page == "support" && <Support setPage = {changePage} setUser = {setUser}/>}
+      {page == "support" && <Support setPage = {changePage} setUser = {setUser} db={db}/>}
       {page === "cart" && <Cart cart={cart} setCart={setCart}/>}
       <Footer db={db}/>
     </div>
