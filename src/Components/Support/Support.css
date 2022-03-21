@@ -9,34 +9,57 @@
       'fiveItem'
       'sixItem';
     gap: 10px;
-    margin: 1em 16em;
-    background-color: rgb(65, 61, 61); 
-    min-height: 45em;
+    margin: 1em 0;
+    padding: 4em 16em;
+    background-color: #121212; 
+    min-height: auto;
 }
-.name{
-    text-align: center;
-    margin: 2em auto;
-    background-color: rgb(161, 157, 157);
-    width: 15em;
-    height: 3em;
+.supTitle{
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    padding: 0 0 0.5em 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #fff;
 }
-.name h2{
-    padding: 0.3em;
+
+.main h3{
+    color:white;
+    font-style: italic;
+    position: relative;
+}
+.main h3:after{
+    content: "";
+    border-bottom: 3px solid;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    width: 45px;
 }
 .questions{
     margin-bottom: 5em;
     display: flex;
     justify-content: space-around;
+    background-color: #242424;
+    border: 1px solid red;
+    position: relative;
 }
 .questions p{
-    width: 90%;
-    padding-left: 20px;
-    /* height: 2em; */
+    width: 80%;
+    position: relative;
+}
+.questions p:after{
+    content: "";
+    border-bottom: 3px groove;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    width: 45px;
 }
 .button, .buttonItem, .buttonItem2,.buttonItem3{
     font-size: 2em;
     margin-right: 1em;
-    border: 20px solid red;
 }
 
  .hideButton, .hideButton2, .hideButton3{
@@ -67,18 +90,21 @@
 }
 
 .supportBlock{
-    background-color: rgb(161, 157, 157);
     width: 100%;
-    /* padding-left: 20px; */
     margin-top: 3em;
-    height: 2.5em;
+    padding: 1.5em;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 6px solid blue;
 }
 .leftSection{
     width: 45%;
+    border: 1px solid red;
 }
 .rightSection{
     width: 45%;
+    border: 1px solid blue;
 }
 .supportItem{
     background-color: rgb(228, 218, 218);
@@ -106,20 +132,20 @@
 .icon{
     text-align: end;
     font-size: 1.5em;
-    margin-right: 7px;
+    padding-right: 1.5em;
 }
 
 .successMessage{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1%;
-    font-size: 40px;
+    position: absolute;
+    width: 50%;
+    font-size: 25px;
+    bottom: 92%;
+    text-align: center;
     color: white;
-    animation: fadeOut 3s;
+    animation: fadeOut 3.5s;
 }
 @keyframes fadeOut {
-    0% {opacity:1;}
-    100% {opacity:0;}
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity: 0;}
   }
