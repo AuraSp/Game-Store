@@ -4,12 +4,16 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { ref, set, push } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
 
 export default function SupportItem(props) {
-    var database = props.database;
-    console.log(database)
+    var database = props.db;
+
     let [qOpened, setQ] = useState(false)
     let [q1, setQ1] = useState(false)
     let [q2, setQ2] = useState(false)
     let [q3, setQ3] = useState(false)
+    const [question, setQuestion] = useState('');
+    const [email, setEmail] = useState('');
+
+
     function qShow() {
         console.log(qOpened)
         setQ(!qOpened)
@@ -24,19 +28,21 @@ export default function SupportItem(props) {
         }
     }
 
-    const [question, setQuestion] = useState('');
-  const [email, setEmail] = useState('');
-
-    function questionInput(e, qType) {
+    function questionInput(e, qType, qTopic, q) {
         e.preventDefault()
-        if (qType == "gameSoftware") {
-            const refs = ref(database, 'Game, Software Questions/');
-            const newPostRef = push(refs);
-            set((newPostRef), {
-                User_email: email,
-                User_question: question,
-            });
-        }
+        const refs = ref(database, qType + "/");
+        const newPostRef = push(refs);
+        console.log("Success?")
+        set((newPostRef), {
+            Question_topic: qTopic,
+            User_email: email,
+            User_question: question,
+        });
+        e.target.reset();
+        props.completeSubmit(<div className='successMessage'>Question Submitted Succesfully!</div>)
+        setQuestion('');
+        setEmail('');
+        openQ(q)
     }
     return (
         <div className="mainSupport">
@@ -47,36 +53,38 @@ export default function SupportItem(props) {
             {qOpened == true &&
                 <div className="allItem">
                     <div className="supportItem oneItem">
-                        <p>{props.q1}</p>
+                        <p>{props.q[0]}</p>
                         <div className="icon"><FontAwesomeIcon onClick={(e) => { openQ("q1") }} icon={faAngleDown} /></div>
 
                         {q1 == true &&
-                            <form onSubmit={(e) => questionInput(e, 'gameSoftware')}>
-                                <textarea  onChange={e => setQuestion(e.target.value)} id="supportGamesSoftwere1" placeholder='describe what is not so and we will reply as soon as possible'></textarea>
-                                <input onChange={e => setEmail(e.target.value)}  type='email' placeholder='Your email'></input>
-                                <button type='button' className="sendButton">send</button>
+                            <form onSubmit={(e) => questionInput(e, props.dbTopic, props.q[0], "q1")}>
+                                <textarea className='suppTextField'  onChange={e => setQuestion(e.target.value)} id="supportGamesSoftwere1" placeholder='describe what is not so and we will reply as soon as possible'></textarea>
+                                <input className='suppEmail' onChange={e => setEmail(e.target.value)}  type='email' placeholder='Your email'></input>
+                                <button type='submit' className="sendButton">send</button>
                             </form>
                         }
                     </div>
                     <div className="supportItem twoItem">
-                        <p>{props.q2}</p>
+                        <p>{props.q[1]}</p>
                         <div className="icon"> <FontAwesomeIcon onClick={(e) => { openQ("q2") }} icon={faAngleDown} /></div>
 
                         {q2 == true &&
-                            <div>
-                                <textarea name="" id="supportGamesSoftwere2" placeholder='describe what is not so and we will reply as soon as possible'></textarea>
-                                <button className="sendButton">send</button>
-                            </div>
+                            <form onSubmit={(e) => questionInput(e, props.dbTopic, props.q[1], "q2")}>
+                                <textarea className='suppTextField' name="" id="supportGamesSoftwere2" placeholder='describe what is not so and we will reply as soon as possible'></textarea>
+                                <input className='suppEmail' onChange={e => setEmail(e.target.value)}  type='email' placeholder='Your email'></input>
+                                <button type='submit' className="sendButton">send</button>
+                            </form>
                         }
                     </div>
                     <div className="supportItem threeItem">
-                        <p>{props.q3}</p>
+                        <p>{props.q[0]}</p>
                         <div className="icon"><FontAwesomeIcon onClick={(e) => { openQ("q3") }} icon={faAngleDown} /></div>
                         {q3 == true &&
-                            <div>
-                                <textarea name="" id="supportGamesSoftwere2" placeholder='describe what is not so and we will reply as soon as possible'></textarea>
-                                <button className="sendButton">send</button>
-                            </div>
+                            <form onSubmit={(e) => questionInput(e, props.dbTopic, props.q[2], "q3")}>
+                                <textarea className='suppTextField' name="" id="supportGamesSoftwere3" placeholder='describe what is not so and we will reply as soon as possible'></textarea>
+                                <input className='suppEmail' onChange={e => setEmail(e.target.value)}  type='email' placeholder='Your email'></input>
+                                <button type='submit' className="sendButton">send</button>
+                            </form>
                         }
                     </div>
                 </div>
