@@ -7,6 +7,7 @@ function Forum(props) {
       <div className="Forum-bar">
         <img className="Forum-image" src={props.img} alt="" />
         <p className="Forum-text">{props.title}</p>
+        <a className="Forum-link">Read More</a>
       </div>
     </section>
   );

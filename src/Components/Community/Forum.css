@@ -1,6 +1,3 @@
-.Forum-list {
-}
-
 .Forum-bar {
   background: linear-gradient(
     90deg,
@@ -19,4 +16,16 @@
 
 .Forum-image {
   float: left;
+}
+
+.Forum-bar :nth-child(3) {
+  margin-left: auto;
+}
+
+.Forum-link {
+  margin: 1em 1em;
+}
+
+.Forum-link:hover {
+  color: black;
 }
