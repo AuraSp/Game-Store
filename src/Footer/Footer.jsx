@@ -112,6 +112,10 @@ const Footer = (props) => {
     await navigator.clipboard.writeText(url);
   }
 
+  function paging(page) {
+    props.setPage(page);
+  }
+
   return (
     <footer className='text-light'>
       {/* <div>{success}</div> */}
@@ -178,6 +182,19 @@ const Footer = (props) => {
             <img src="./LOGO.png" alt="logo" />
           </div>
           <div className='shareBlock'>
+          <div className='quicklinks'>
+          <h4>Quick Links</h4>
+          <div className='displayflexlinks'>
+          <a
+          href={() => false}
+          onClick={(e) => {
+            paging("main");
+          }}
+          >Home</a>
+          <a>Community</a>
+          <a>Support</a>
+          </div>
+              </div>
             <div className='follow'>
               <h4>Follow Us</h4>
               <div className='displayflex'>
@@ -187,12 +204,12 @@ const Footer = (props) => {
               </div>
             </div>
             <div className='share'>
-            <h4>Share Us</h4>
-            <div className='displayflexshare'>
-              <button onClick={copy}>Share</button>
-              <input value={url} readOnly></input>
-              <div className='copied'>{copied}</div>
-            </div>
+              <h4>Share Us</h4>
+              <div className='displayflexshare'>
+                <button onClick={copy}>Share</button>
+                <input value={url} readOnly></input>
+                <div className='copied'>{copied}</div>
+              </div>
             </div>
           </div>
         </div>

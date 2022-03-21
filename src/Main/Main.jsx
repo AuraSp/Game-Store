@@ -158,7 +158,7 @@ const Main = (props) => {
           </a>
           <p className="item-2-bottom-p">
             Or
-            <a href="../PAGE/signup.html">sign up</a> and join for free
+            <a href="../PAGE/signup.html"> sign up</a> and join for free
           </p>
         </div>
       </section>
