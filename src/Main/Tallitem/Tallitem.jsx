@@ -8,7 +8,7 @@ const Tallitem = (props) => {
                   <div className="bigItem3Img"><img src={product.photo1}alt=""/></div>
                   <div className="bigItem3Under">
                     <div className="discount">-20%</div> 
-                    <div className="item3Sale"><a href={() => false} onClick={(e)=>{props.setProduct(product)}}>{product.price}</a> </div>
+                    <div className="item3Sale"><a href={() => false} onClick={(e)=>{props.setProduct(product)}}>{product.price}$</a> </div>
                   </div>
                 </a>
     </div>
