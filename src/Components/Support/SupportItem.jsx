@@ -59,7 +59,7 @@ export default function SupportItem(props) {
                     </div>
                     {q1 == true &&
                         <form onSubmit={(e) => questionInput(e, props.dbTopic, props.q[0], "q1")}>
-                            <textarea className='suppTextField' onChange={e => setQuestion(e.target.value)} id="supportGamesSoftwere1" placeholder='Describe what is wrong and we will reply as soon as possible' rows='8'></textarea>
+                            <textarea className='suppTextField' onChange={e => setQuestion(e.target.value)} id="supportGamesSoftwere1" placeholder='Describe what is wrong and we will reply as soon as possible' rows='5'></textarea>
                             <div className='sendBottom'>
                                 <input className='suppEmail' onChange={e => setEmail(e.target.value)} type='email' placeholder='Your email'></input>
                                 <button type='submit' className="sendButton">send</button>
