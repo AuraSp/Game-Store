@@ -15,7 +15,7 @@ const Search = (props) => {
   }
   return (
     <div className="searchPage">
-      <div className="searchTerm">Searching for: {props.searchTerm}</div>
+      <h2 className="searchTerm">Searching For: {props.searchTerm}</h2>
       <div className="searchResults">
         {Data.map(
           (product) =>
