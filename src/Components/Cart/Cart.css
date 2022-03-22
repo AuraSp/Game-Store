@@ -12,11 +12,11 @@
 }
 .cartProduct{
         color: black;
-        border: 2px solid black;
-        padding: 2%;
+        padding: 1%;
         text-align: center;
         background-color: #fff;
         text-decoration: none;
+        border-left: 6px solid #af8331;
         width: 80%;
         border-radius: 15px;
         display: flex;
@@ -27,24 +27,24 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 600;
 }
 .cartDelete{
-    width: 10%;
+    width: 5%;
     text-decoration: none;
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: white;
-    padding: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #ff0000 inset;
+    border: none;
+    background-color: #fff;
+    padding: 0.5% 2% 0.5% 2%;
     text-align: center;
+    transition: 0.5s linear;
     color: black;
 }
 .cartDelete:hover{
-        background-color: darkred;
+        box-shadow: 0 50px 60px darkred inset;
         color: white;
-        border: 2px solid white;
 }
 .cartTotalPrice{
     position: relative;

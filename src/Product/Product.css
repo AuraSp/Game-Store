@@ -267,3 +267,19 @@
 .productForm button:hover{
     background-color: #fff;
 }
+.prodComment button{
+    width: 5%;
+    margin-top: 1em;
+    border: none;
+    border-radius: 15px;
+    padding: 0.9em;
+    align-self: flex-end;
+    background-color: #cea4a4;
+    box-shadow: 0 0 5px #ff0000 inset;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.prodComment button:hover{
+    box-shadow: 0 50px 60px #e82f2f inset;
+    opacity: 0.9;
+}
