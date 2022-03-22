@@ -126,12 +126,16 @@
     font-style: italic;
 }
 .mainSupport form{
-    width: 90%;
+    width: 85%;
+    border-radius: 10px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    animation: formAppear 500ms linear;
+    animation: formAppear 300ms linear;
+    padding: 1.5em 0.5em 1.5em 0.5em;
+    border-left: 2px solid #f5cc01;
+    background-color: #242424;
 }
 @keyframes formAppear {
     from{
@@ -146,42 +150,47 @@
 .suppTextField{
     width: 90%;
     font-size: 1.2em;
-    padding-top: 0.5em;
-    text-align: center;
-    border-radius: 15px;
-    border: 1px solid grey;
-    box-shadow: 0 1px 8px #242424 inset;
+    padding: 2em 5em 0 1em;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 4px solid #af8331;
+    font-weight: 500;
+    transition: 1s all;
+}
+.suppTextField:focus, .suppEmail:focus{
+    outline: none;
 }
 .suppEmail{
     width: 90%;
     padding: 1em;
     margin: 1em 0 1em 0;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid grey;
-    box-shadow: 0 1px 5px #242424 inset;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 4px solid #af8331;
     color: black;
     font-weight: 500;
+    transition: 1s all;
 }
 .suppTextField:hover, .suppEmail:hover{
-    border-color: #af8331;
-    border: 1px solid;
+    border-color: #f5cc01;
 }
 .sendBottom{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
+    
 }
 .sendButton{
-    padding: 1em; 
-    width: 90%;
+    padding: 1.1em;
+    width: 30%;
     border: none;
     border-radius: 15px;
+    font-size: 0.8em;
     background-color: #af8331;
-    box-shadow: 0 1px 10px #000 inset;
     cursor: pointer;
+    transition: 1s all;
 }
 .sendButton:hover{
     background-color: #cebfa4;
