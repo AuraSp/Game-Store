@@ -53,17 +53,17 @@
 
   .itemBigHalf2{
     width: 50%;
-    height: 55vh;
+    height: 88%;
     background-color: #242424;
+    border-bottom-right-radius: 10px;
   }
   .gameBigTitle{
-    margin-top: 4em;
     width: 100%;
     background-color: #2e2e2e;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
     transition: 1.2s all;
   }
   .gameBigTitle:hover{
@@ -77,9 +77,9 @@
   }
 
   .item1Group{
-      height: 65%;
+      height: 70%;
       width: 100%;
-    background-color: #242424;
+      background-color: #242424;
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 0.5em;
@@ -353,7 +353,9 @@
   height: 100%;
 }
 .videoPlayer{
-  width: 100%;
+  width: 55%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 

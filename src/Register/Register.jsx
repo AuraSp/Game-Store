@@ -98,10 +98,10 @@ const Register = (props) => {
       {/* <label class="regCountry-select" htmlFor="country">Country of Residence</label> */}
       <select className="signUp-countrySelect" id="reg-country" form="countryform" name="countrylist" onChange={(e) => { changeData(e) }} required>
         <option>Choose your country</option>
-        <option value="----">----</option>
-        <option value="----">----</option>
-        <option value="----">----</option>
-        <option value="----">----</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="England">England</option>
+        <option value="America">America</option>
+        <option value="Venesuela">Venesuela</option>
       </select>
       <div>
       <input type="password" id="reg-password" placeholder="Password" onChange={(e) => { changeData(e) }} required />

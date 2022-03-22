@@ -6,11 +6,9 @@ const Bigitem = (props) => {
 
   return (
     <div className="item">
-                  <div className="item1BigImg">
-                    <video width="470" className="videoPlayer"controls>
+                    <video className="videoPlayer"controls>
                       <source src={product.trailerUrl} type="video/mp4"/>
                     </video>
-                  </div>
                   <div className="itemBigHalf2">  
                     <div className="gameBigTitle"><a href={() => false} onClick={(e)=>{props.setProduct(product)}}>{product.name}</a> </div>
                     <div className="item1Group">
