@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Product.css';
-import { ref, set, push,  getDatabase, get, child,  onValue, remove } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
+import { ref, set, push, getDatabase, get, child, onValue, remove } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
 
 const Product = (props) => {
 
@@ -13,14 +13,14 @@ const Product = (props) => {
   let product = props.productInfo
   console.log(props.user)
 
-  function leaveComment(e){
+  function leaveComment(e) {
     e.preventDefault();
-    if(comment){
-    console.log("test")
-    set((push(ref(props.db, "Comments/"))), {
-          Game: product.name,
-          User: props.user.displayName,
-          Comment: comment
+    if (comment) {
+      console.log("test")
+      set((push(ref(props.db, "Comments/"))), {
+        Game: product.name,
+        User: props.user.displayName,
+        Comment: comment
       });
       e.target.reset();
       /* props.completeSubmit(<div className='successMessage'>Question Submitted Succesfully!<BsCheckCircle style={!q ? {} : { color: '#af83318e' }} /></div>) */
@@ -29,12 +29,12 @@ const Product = (props) => {
   }
 
 
-  function removeComment(comment){
+  function removeComment(comment) {
     console.log(comment)
     remove(ref(props.db, 'Comments/' + comment));
   }
-  
-  function readData(){
+
+  function readData() {
     const dataRef = ref(props.db, 'Comments/');
     onValue(dataRef, (snapshot) => {
       const data = snapshot.val();
@@ -49,9 +49,9 @@ const Product = (props) => {
   }
 
   useEffect(() => {
-  readData()
+    readData()
   }, [])
-  
+
   return (
     <div className='productPage'>
       <span className='prodTitle'>{product.name}</span>
@@ -104,15 +104,19 @@ const Product = (props) => {
         </div>
       </div>
       <div className='productComments'>
-        {props.user != 0 &&
-        <form onSubmit={(e) =>{leaveComment(e)}}>
-        <textarea className='productComment' name="" onChange={(e)=>{setComment(e.target.value)}} value={comment} id="supportGamesSoftwere2" placeholder='Describe what is wrong and we will reply as soon as possible'></textarea>
-        <button type="submit">Post</button>
-        </form>}
-        <div>
-          {divComments.map((comment)=>(
-            comment[2] == product.name && <div className='prodComment'>{comment[0]}: {comment[1]} : {comment[2]} {comment[1] == props.user.displayName &&<button type="button" onClick={(e)=>{removeComment(comment[3])}}>Remove</button>}</div>
-          ))}
+        <h2>Comment section</h2>
+        <div className='productCommentList'>
+          {props.user != 0 &&
+            <form onSubmit={(e) => { leaveComment(e) }}>
+              <textarea className='productComment' name="" onChange={(e) => { setComment(e.target.value) }} value={comment} id="supportGamesSoftwere2" placeholder='Leave your comment!...'></textarea>
+              <button type="submit">Post</button>
+            </form>}
+          <div>
+            {divComments.map((comment) => (
+              comment[2] == product.name && <div className='prodComment'>
+                <p>{comment[0]}</p><p>Commented By - <b>{comment[1]}</b></p><p>Game - <b>{comment[2]}</b></p> {comment[1] == props.user.displayName && <button type="button" onClick={(e) => { removeComment(comment[3]) }}>Remove</button>}</div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -135,7 +135,7 @@
 }
 .productRequirements h3, .prodTags h3{
     position: relative;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.6em;
 }
 .productRequirements ul, .prodTags ul{
     list-style-type: none;
@@ -165,8 +165,64 @@
 .productRequirements h3:after, .prodTags h3:after {
     content: "";
     border-bottom: 3px solid #fff;
-    bottom: -0.3em;
+    bottom: -0.4em;
     left: 0;
     position: absolute;
     width: 25px;
+}
+
+
+/*Comments */
+.productComments{
+    width: 90%;
+    min-height: auto;
+    color: #fff;
+}
+.productComments h2, .productComments h2{
+    margin: 1em 0 2em 0em;
+    position: relative;
+    font-weight: normal;
+}
+.productComments h2:after, .productComments h2:after{
+    content: "";
+    border-bottom: 3px solid;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    width: 45px;
+}
+.productCommentList{
+    background-color: #242424;
+    padding: 2em;
+    border-left: 6px solid;
+}
+.prodComment{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #8d6a28;
+}
+.prodComment p:first-of-type{
+   font-size: 1em;
+   position: relative;
+}
+.prodComment p:first-of-type:before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    bottom: 0.3em;
+    left: -1em;
+    width: 0.5em;
+    height: 0.5em;
+}
+.prodComment p:nth-of-type(2), .prodComment p:last-of-type{
+   text-align: end;
+   font-size: 0.8em;
+   color: #ffa600;
+}
+.prodComment p:nth-of-type(2) b, .prodComment p:last-of-type b{
+    color: #fff;
 }
