@@ -27,7 +27,7 @@ const Bigitem = (props) => {
                         <div className="tag">{product.tags[3]} </div>
                       </div>
                       <div className="item1PriceContainer">  
-                        <div className="item1Price"><button className="item1Button">Buy {product.price}</button></div>
+                        <div className="item1Price"><button type='button' onClick={(e)=>{props.setProduct(product)}} className="item1Button">Buy {product.price}</button></div>
                       </div>
                     </div>
                   </div>

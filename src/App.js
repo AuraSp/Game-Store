@@ -19,7 +19,7 @@ function App() {
   let [searchable, setSearchable] = useState("");
   let [product, setProduct] = useState(0)
 
-  let [cart, setCart] = useState(["God Of War"])
+  let [cart, setCart] = useState([])
 
   const firebaseConfig = {
     apiKey: "AIzaSyDA9Ez4i7vSWvq8uzvmmy8CMQ54x-EDRfs",
@@ -66,7 +66,7 @@ function App() {
         auth={auth}
       />
 
-      {page === "main" && <Main setProduct={settingProduct} />}
+      {page === "main" && <Main setProduct={settingProduct} setPage={changePage}/>}
       {page === "login" && <Login setPage={changePage} setUser={setUser} auth={auth}/>}
       {page === "register" && (
         <Register setPage={changePage} setUser={setUser} auth={auth}/>
@@ -78,7 +78,7 @@ function App() {
         <Search setProduct={settingProduct} searchTerm={searchable} />
       )}
       {page === "community" && <Community />}
-      {page == "support" && <Support setPage = {changePage} setUser = {setUser} db={db}/>}
+      {page === "support" && <Support setPage = {changePage} setUser = {setUser} db={db}/>}
       {page === "cart" && <Cart cart={cart} setCart={setCart}/>}
       <Footer 
       setPage={changePage}

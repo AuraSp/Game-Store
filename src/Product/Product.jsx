@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Product.css';
-import { ref, set, push, getDatabase, get, child, onValue, remove } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
+import { ref, set, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
 
 const Product = (props) => {
 
@@ -106,17 +106,19 @@ const Product = (props) => {
       <div className='productComments'>
         <h2>Comment section</h2>
         <div className='productForm'>
-        {props.user != 0 &&
+        {props.user !== 0 ?
           <form onSubmit={(e) => { leaveComment(e) }}>
             <textarea className='commentTextArea' name="" onChange={(e) => { setComment(e.target.value) }} value={comment} id="supportGamesSoftwere2" placeholder='Leave your comment!...'></textarea>
             <span class="focus-border"/>
             <button type="submit">Post</button>
-          </form>}
+          </form> : <h6><a href={() => false} onClick={(e)=>{
+            props.setPage("login")
+          }} className="smallLink">Login</a> to write comments</h6>}
           </div>
         <div className='productCommentList'>
           {divComments.map((comment) => (
-            comment[2] == product.name && <div className='prodComment'>
-              <p>{comment[0]}</p><p>Commented By - <b>{comment[1]}</b></p><p>Game - <b>{comment[2]}</b></p> {comment[1] == props.user.displayName && <button type="button" onClick={(e) => { removeComment(comment[3]) }}>Remove</button>}</div>
+            comment[2] === product.name && <div className='prodComment'>
+              <p>{comment[0]}</p><p>Commented By - <b>{comment[1]}</b></p>{comment[1] === props.user.displayName && <button type="button" onClick={(e) => { removeComment(comment[3]) }}>Remove</button>}</div>
           ))}
         </div>
       </div>

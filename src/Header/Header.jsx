@@ -38,36 +38,36 @@ const Header = (props) => {
           </a>
         </div>
         <ul>
+          <a
+                href={() => false}
+                onClick={(e) => {
+                  paging("main");
+                }}
+              >
           <li>
-            <a
-              href={() => false}
-              onClick={(e) => {
-                paging("main");
-              }}
-            >
               Store
-            </a>
           </li>
-          <li>
-            <a
+          </a>
+          <a
               href={() => false}
               onClick={(e) => {
                 paging("community");
               }}
             >
-              Community
-            </a>
-          </li>
           <li>
+              Community
+          </li>
+          </a>
           <a
               href={() => false}
               onClick={(e) => {
                 paging("support");
               }}
             >
+          <li>
               Support
-            </a>
           </li>
+          </a>
         </ul>
         <input
           type="text"
@@ -104,7 +104,7 @@ const Header = (props) => {
                   <li>Sign up</li>
                 </a>
               </div>
-              <a href={() => false}>
+              {/* <a href={() => false}>
                 <li>
                   Lietuvių | LT
                   <ul className="language-menu">
@@ -116,7 +116,7 @@ const Header = (props) => {
                     </a>
                   </ul>
                 </li>
-              </a>
+              </a> */}
             </div>
           ) : (
             <div className="navBtns">

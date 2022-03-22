@@ -13,8 +13,14 @@ html {
 a:hover{
   cursor: pointer;
 }
+button:hover{
+  cursor: pointer;
+}
 
-
+.smallLink{
+  text-decoration: underline;
+  color: white;
+}
 /*----- HEADER SECTIION END -----*/
 /*----- MAIN SECTIION -----*/
 
@@ -112,10 +118,6 @@ a:hover{
 
 .log-in-btn:hover {
   background-color: var(--button-text-hover);
-}
-
-.item-2-bottom-p a {
-  text-decoration: none;
 }
 
 /*----- FOOTER -----*/

@@ -153,12 +153,11 @@ const Main = (props) => {
           </p>
         </div>
         <div className="item-2-bottom">
-          <a href="../PAGE/login.html" className="log-in-btn" type="button">
+          <a href={() => false}  onClick={(e)=>{props.setPage("login")}} className="log-in-btn" type="button">
             Sign In
           </a>
           <p className="item-2-bottom-p">
-            Or
-            <a href="../PAGE/signup.html"> sign up</a> and join for free
+            Or <a href={() => false} onClick={(e)=>{props.setPage("register")}} className="smallLink">Sign up</a> and join for free
           </p>
         </div>
       </section>

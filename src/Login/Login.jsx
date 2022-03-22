@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Login.css';
-import {signInWithEmailAndPassword, onAuthStateChanged, signOut, setPersistence, browserSessionPersistence } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
+import {signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
 
 
 const Login = (props) => {
@@ -11,7 +11,7 @@ const Login = (props) => {
 
 
   function changeLoginValue(e, type){
-    if(type=="email"){
+    if(type==="email"){
       setEmail(e.target.value)
     }else{
       setPass(e.target.value)
@@ -35,8 +35,6 @@ const Login = (props) => {
       .catch((error) => {
         tempErrs.push("Wrong username or password!")
         setErrs(tempErrs)
-        const errorCode = error.code;
-        const errorMessage = error.message;
       });
   }
 
@@ -54,18 +52,13 @@ const Login = (props) => {
           <input className="loginEmail-Input" onChange={(e)=>{changeLoginValue(e, "email")}} type="email" id="log-email" placeholder='Account email' required/>
           <input className="loginPassword-Input" onChange={(e)=>{changeLoginValue(e, "password")}} type="password" id="log-password" placeholder='Password' required/>
           <button className='signIn-Btn' id="signInSubmit">Sign in</button>
-          <a className="passwordLink" href="#">Forgot your password?</a>
+          {/* <a className="passwordLink" href={() => false}>Forgot your password?</a> */}
         </form>
       </div>
       <div className="loginAd"> {/*item-2*/}
         <p className="loginAd-headerText">Join and discover thousands of games to play.</p>
-        <a className="loginAd-mainLink" href="#">Learn More</a>
-        <img src="./img/Gaming Illustration in PNG, SVG.png" alt="img" />
+        <a className="loginAd-mainLink" href={() => false} onClick={(e)=>{props.setPage("register")}}>Sign up</a>
         <p className="loginAd-footerText">It's free and easy to use.</p>
-        {/* <div class="logUtilities">
-        <button id="logout">LOG OUT</button>
-        <button id="checkUser">CURRENT USER</button>
-        </div> ??????????*/}
       </div>
     </div>
   )
