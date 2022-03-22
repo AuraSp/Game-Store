@@ -45,6 +45,11 @@ const Register = (props) => {
       tempErrs.push("Passwords must match!")
       setErrlist(tempErrs)
     }
+    if (password.length < 6){
+      regLegit = false;
+      tempErrs.push("Password length must be longer than 6 symbols!")
+      setErrlist(tempErrs)
+    }
     if (regLegit) {
       createUserWithEmailAndPassword(props.auth, email, password)
         .then((userCredential) => {
