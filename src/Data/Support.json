@@ -1,0 +1,39 @@
+[
+    {
+
+        "dbTopic": "GamesSoftware",
+        "name": "Games, Software",
+        "q": ["Game not working?","Haven't received a game?","Sound not working?"]
+    },
+    {
+        "dbTopic": "Purchases",
+        "name": "Purchases",
+        "q": ["Did not receive the goods?","Issues with paying?","Bad quality?"]
+    },
+    {
+        "dbTopic": "MyAccount",
+        "name": "My Account",
+        "q": ["Can't log in?", "Forgot password?", "Didn't get the Guard?"]
+    }
+    ,
+    {
+        "dbTopic": "Client",
+        "name": "Client",
+        "q": ["Can't contact login servers?", "You to find error?", "No money came?"]
+    }
+    ,
+    {
+        "dbTopic": "Community",
+        "name": "Community",
+        "q": ["Steam account was stolen and need help to recover it?","Not receiving a Steam Guard code?","Deleted or lost my Steam Guard mobile authenticator?"]
+    }
+    ,
+    {
+        "dbTopic": "Giftcards",
+        "name": "Giftcards",
+        "q": ["Can't receive your cards?","Cards doesn't work?","Can't buy cards?"]
+    }
+
+
+
+]

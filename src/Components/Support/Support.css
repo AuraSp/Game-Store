@@ -9,72 +9,200 @@
       'fiveItem'
       'sixItem';
     gap: 10px;
-    margin: 1em 16em;
-    background-color: rgb(65, 61, 61); 
-    min-height: 45em;
+    margin: 1em 0;
+    padding: 4em 12em;
+    background-color: #121212; 
+    min-height: auto;
 }
-.name{
-    text-align: center;
-    margin: 2em auto;
-    background-color: rgb(161, 157, 157);
-    width: 15em;
-    height: 3em;
+.supTitle{
+    width: 100%;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 0 0 0.5em 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #fff;
 }
-.name h2{
-    padding: 0.3em;
-}
-.questions{
-    margin-left: 4em;
-    margin-bottom: 5em;
-}
-.questions p{
-    width: 19.5em;
-    padding-left: 20px;
-    /* height: 2em; */
-}
-.button, .buttonItem, .buttonItem2,.buttonItem3{
-    font-size: 2em;
-    margin-right: 1em;
-    border: 20px solid red;
-}
-
-.hideButton{
+.main h3{
+    color:white;
+    font-style: italic;
     position: relative;
-    top:-2em;
-    right: -10px;
-    font-size: 80%;     
+    margin-bottom: 0.5em;
 }
-
-
-.supportBlock{
-    background-color: rgb(161, 157, 157);
-    width: 19.5em;
-    padding-left: 20px;
-    margin-top: 3em;
-    height: 2.5em;
-    display: flex;
+.main h3:after{
+    content: "";
+    border-bottom: 3px solid #af8331;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    width: 45px;
 }
-.supportItem{
-    background-color: rgb(172, 99, 99);
-    width: 19.5em;
-    padding-left: 20px;
-    margin-top: 1.5em;
-    height: 2.5em;
-    display: flex;
-    margin-left: 2em;
+.leftSection, .rightSection{
+    width: 45%;
 }
-.allItem{
-    display: none;
- height: 30vh;
- background-color: white;
- flex-direction: column;
- width: 40%;
-}
-
-
 .show{
     display:flex;
 }
 .hide{
     display: none;
+}
+.icon{
+    text-align: end;
+    font-size: 1.5em;
+    padding-right: 1.5em;
+    width: 10%;
+}
+.icon svg{
+    transition: 500ms all;
+}
+.questions{
+    margin-bottom: 5em;
+    padding: 3em 0 5em 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #242424;
+    position: relative;
+}
+.questions p{
+    width: 80%;
+    position: relative;
+}
+.questions p:after{
+    content: "";
+    border-bottom: 3px solid #af8331;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    width: 6%;
+}
+.mainSupport{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.supportBlock{
+    width: 100%;
+    margin-top: 3em;
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 8px solid #af8331;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.allItem{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin-top: 0.4em;
+    margin-left: 0.4em;
+    border-left: 4px solid #af8331;
+    border-radius: 10px;
+    align-items: center;
+}
+.supportItem p{
+    width: 70%;
+    margin-left: 10px;
+}
+.supportItem svg{
+    width: 5em;
+    padding: 0.5em;
+    transition: 500ms all;
+}
+.supportItem{
+    background-color: #242424;
+    border-left: 6px solid #f5cc01;
+    border-radius: 15px;
+    width: 85%;
+    z-index: 1;
+    margin: 1em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column wrap;
+    align-items: center;
+    color: #fff;
+    font-style: italic;
+}
+.mainSupport form{
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    animation: formAppear 500ms linear;
+}
+@keyframes formAppear {
+    from{
+        transform: translateY(-8em);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.suppTextField{
+    width: 90%;
+    font-size: 1.2em;
+    padding-top: 0.5em;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid grey;
+    box-shadow: 0 1px 8px #242424 inset;
+}
+.suppEmail{
+    width: 90%;
+    padding: 1em;
+    margin: 1em 0 1em 0;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid grey;
+    box-shadow: 0 1px 5px #242424 inset;
+    color: black;
+    font-weight: 500;
+}
+.suppTextField:hover, .suppEmail:hover{
+    border-color: #af8331;
+    border: 1px solid;
+}
+.sendBottom{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.sendButton{
+    padding: 1em; 
+    width: 90%;
+    border: none;
+    border-radius: 15px;
+    background-color: #af8331;
+    box-shadow: 0 1px 10px #000 inset;
+    cursor: pointer;
+}
+.sendButton:hover{
+    background-color: #cebfa4;
+}
+.successMessage{
+    position: absolute;
+    width: 50%;
+    font-size: 25px;
+    top: 5%;
+    text-align: center;
+    color: white;
+    animation: fadeOut 3.5s;
+    font-style: italic;
+    font-weight: 400;
+}
+.successMessage svg{
+    text-align: center;
+    margin-left: 0.5em;
+}
+@keyframes fadeOut {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity: 0;}
 }

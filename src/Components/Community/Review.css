@@ -16,3 +16,7 @@
 .Review-bar > * {
   padding: 1em;
 }
+
+.Review-bar a:hover {
+  color: black;
+}
