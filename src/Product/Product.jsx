@@ -105,18 +105,19 @@ const Product = (props) => {
       </div>
       <div className='productComments'>
         <h2>Comment section</h2>
-        <div className='productCommentList'>
-          {props.user != 0 &&
-            <form onSubmit={(e) => { leaveComment(e) }}>
-              <textarea className='productComment' name="" onChange={(e) => { setComment(e.target.value) }} value={comment} id="supportGamesSoftwere2" placeholder='Leave your comment!...'></textarea>
-              <button type="submit">Post</button>
-            </form>}
-          <div>
-            {divComments.map((comment) => (
-              comment[2] == product.name && <div className='prodComment'>
-                <p>{comment[0]}</p><p>Commented By - <b>{comment[1]}</b></p><p>Game - <b>{comment[2]}</b></p> {comment[1] == props.user.displayName && <button type="button" onClick={(e) => { removeComment(comment[3]) }}>Remove</button>}</div>
-            ))}
+        <div className='productForm'>
+        {props.user != 0 &&
+          <form onSubmit={(e) => { leaveComment(e) }}>
+            <textarea className='commentTextArea' name="" onChange={(e) => { setComment(e.target.value) }} value={comment} id="supportGamesSoftwere2" placeholder='Leave your comment!...'></textarea>
+            <span class="focus-border"/>
+            <button type="submit">Post</button>
+          </form>}
           </div>
+        <div className='productCommentList'>
+          {divComments.map((comment) => (
+            comment[2] == product.name && <div className='prodComment'>
+              <p>{comment[0]}</p><p>Commented By - <b>{comment[1]}</b></p><p>Game - <b>{comment[2]}</b></p> {comment[1] == props.user.displayName && <button type="button" onClick={(e) => { removeComment(comment[3]) }}>Remove</button>}</div>
+          ))}
         </div>
       </div>
     </div>

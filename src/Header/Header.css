@@ -36,7 +36,6 @@
     padding: 1em;
     margin: 0;
     border-bottom: 1px solid white;
-  
   }
   
   .left-nav ul li {
@@ -51,12 +50,14 @@
   }
 
   .left-nav input{
-    width: 15%;
-    padding: 0.5em;
-    border-radius: 15px;
+    width: 20%;
+    padding: 1em;
+    font-size: 1em;
+    color: #fff;
     border: none;
-    background-color: #cebfa4;
-    margin: 1.2em 0 0 -8em;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    margin: 2.1em 0 0 0;
   }
   
   .right-nav {

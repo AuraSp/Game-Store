@@ -117,6 +117,7 @@
     width: 7em;
     padding: 0.8em;
     cursor:pointer;
+    transition: 1.2s all;
 }
 .prodBuyBtn:hover{
     background-color: #634919;
@@ -225,4 +226,44 @@
 }
 .prodComment p:nth-of-type(2) b, .prodComment p:last-of-type b{
     color: #fff;
+}
+.productForm {
+    padding: 1em;
+    margin: 0.5em;
+    width: 100%;
+}
+.productForm form{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+.commentTextArea{
+    width: 50%;
+    border: none;
+    border-bottom: 3px solid #8d6a28;
+    border-radius: 5px;
+    padding: 2em 0 0 0;
+    color: #fff;
+    background-color: transparent;
+    transition: 1.2s all;
+}
+.commentTextArea:focus{
+    outline: none;
+    border-color: #fff;
+}
+.productForm button{
+    margin-left: 3em;
+    color: black;
+    background-color: #8d6a28;
+    border-radius: 10px;
+    border: none;
+    width: 7em;
+    padding: 0.8em;
+    cursor:pointer;
+    transition: 1.2s all;
+}
+.productForm button:hover{
+    background-color: #fff;
 }

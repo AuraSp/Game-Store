@@ -64,6 +64,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    transition: 1.2s all;
   }
   .gameBigTitle:hover{
   color: #8d6a28;
