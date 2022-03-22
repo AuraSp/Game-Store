@@ -119,6 +119,10 @@ const Header = (props) => {
               </a>
             </div>
           ) : (
+            <div className="navBtns">
+            <a href={() => false} onClick={(e)=>{
+              paging("cart");
+            }}><BsCartCheck/>CART</a>
             <h3>
               {props.user.displayName}{" "}
               <a
@@ -130,6 +134,7 @@ const Header = (props) => {
                 <li>Logout</li>
               </a>
             </h3>
+            </div>
           )}
         </ul>
       </nav>

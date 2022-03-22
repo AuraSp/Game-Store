@@ -7,7 +7,7 @@ const Login = (props) => {
 
   let [email, setEmail] = useState("");
   let [password ,setPass] = useState("");
-
+  let [errs, setErrs] = useState([]);
 
 
   function changeLoginValue(e, type){
@@ -20,6 +20,7 @@ const Login = (props) => {
 
 
   function submitForm(e){
+    let tempErrs = []
     e.preventDefault();
     signInWithEmailAndPassword(props.auth, email, password)
       .then((userCredential) => {
@@ -32,6 +33,8 @@ const Login = (props) => {
         // ...
       })
       .catch((error) => {
+        tempErrs.push("Wrong username or password!")
+        setErrs(tempErrs)
         const errorCode = error.code;
         const errorMessage = error.message;
       });
@@ -47,6 +50,7 @@ const Login = (props) => {
       <button className='signIn-closeBtn' onClick={(e)=>{closePage()}}>X</button>
         <form onSubmit={(e) => {submitForm(e)}}>
           <h2>SIGN IN</h2>
+          <div className='loginErrs'>{errs}</div>
           <input className="loginEmail-Input" onChange={(e)=>{changeLoginValue(e, "email")}} type="email" id="log-email" placeholder='Account email' required/>
           <input className="loginPassword-Input" onChange={(e)=>{changeLoginValue(e, "password")}} type="password" id="log-password" placeholder='Password' required/>
           <button className='signIn-Btn' id="signInSubmit">Sign in</button>

@@ -5,6 +5,9 @@
   --focus: #634919;
 }
 
+.loginErrs{
+  color: white
+}
 /*====Parent div====*/
 .loginBlock {
   display: flex;

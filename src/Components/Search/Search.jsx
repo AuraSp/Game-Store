@@ -10,9 +10,10 @@ const Search = (props) => {
         console.log(props.searchTerm)
     })
 
-  function clickedProduct(name, price, trailer) {
-    props.setProduct(name, price, trailer);
+  function clickedProduct(product) {
+    props.setProduct(product);
   }
+
   return (
     <div className="searchPage">
       <h2 className="searchTerm">Searching For: {props.searchTerm}</h2>
@@ -26,9 +27,7 @@ const Search = (props) => {
                 href="#"
                 onClick={(e) => {
                   clickedProduct(
-                    product.name,
-                    product.price,
-                    product.trailerUrl
+                    product
                   );
                 }}
               >

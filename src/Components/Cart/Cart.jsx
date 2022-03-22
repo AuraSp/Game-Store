@@ -28,10 +28,11 @@ const Cart = (props) => {
                 <div className='cartProduct'>
                 <div className='cartProductName'>{product},  Price: {Data.map((dataProduct) =>(
                     product === dataProduct.name && <div>{dataProduct.price}$</div>
-                ))}<a href={() => false} onClick={(e)=>{removeFromCart(product, index)}} className="cartDelete">X</a></div>
-                </div>
+                ))}</div>
+                
+                <a href={() => false} onClick={(e)=>{removeFromCart(product, index)}} className="cartDelete">X</a></div>
             ))}
-        <div className='cartTotalPrice'>Total price: {totalPrice}$</div>
+        <h2 className='cartTotalPrice'>Total price: {totalPrice}$</h2>
 
         </div>
     </div>
