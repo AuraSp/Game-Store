@@ -6,10 +6,10 @@ import { useState } from "react";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
 import Product from "./Product/Product";
-import Support from "./Components/Support/Support";
 import Cart from "./Components/Cart/Cart";
 import Search from "./Components/Search/Search";
 import Community from "./Components/Community/Community";
+import Support from "./Components/Support/Support";
 import {getAuth} from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
 import { getDatabase} from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
@@ -76,6 +76,7 @@ function App() {
         <Search setProduct={settingProduct} searchTerm={searchable} />
       )}
       {page === "community" && <Community />}
+      {page == "support" && <Support setPage = {changePage} setUser = {setUser} db={db}/>}
       {page === "cart" && <Cart cart={cart} setCart={setCart}/>}
       <Footer 
       setPage={changePage}

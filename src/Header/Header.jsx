@@ -59,7 +59,14 @@ const Header = (props) => {
             </a>
           </li>
           <li>
-            <a href={() => false}>Support</a>
+          <a
+              href={() => false}
+              onClick={(e) => {
+                paging("support");
+              }}
+            >
+              Support
+            </a>
           </li>
         </ul>
         <input
