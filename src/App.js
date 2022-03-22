@@ -54,6 +54,8 @@ function App() {
     console.log(userCredential);
     setCurrentUser(userCredential);
   }
+
+  
   return (
     <div className="App">
       <Header
@@ -65,18 +67,18 @@ function App() {
       />
 
       {page === "main" && <Main setProduct={settingProduct} />}
-      {page === "login" && <Login setPage={changePage} setUser={setUser} />}
+      {page === "login" && <Login setPage={changePage} setUser={setUser} auth={auth}/>}
       {page === "register" && (
-        <Register setPage={changePage} setUser={setUser} />
+        <Register setPage={changePage} setUser={setUser} auth={auth}/>
       )}
       {page === "product" && (
-        <Product setPage={changePage} productInfo={product} addToCart={addToCart} />
+        <Product setPage={changePage} productInfo={product} addToCart={addToCart} db={db} user={currentUser}/>
       )}
       {page === "search" && (
         <Search setProduct={settingProduct} searchTerm={searchable} />
       )}
       {page === "community" && <Community />}
-      {page == "support" && <Support setPage = {changePage} setUser = {setUser}/>}
+      {page == "support" && <Support setPage = {changePage} setUser = {setUser} db={db}/>}
       {page === "cart" && <Cart cart={cart} setCart={setCart}/>}
       <Footer db={db}/>
     </div>

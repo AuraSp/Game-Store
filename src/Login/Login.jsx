@@ -23,6 +23,7 @@ const Login = (props) => {
     e.preventDefault();
     signInWithEmailAndPassword(props.auth, email, password)
       .then((userCredential) => {
+        console.log("what")
         // Signed in 
         const user = userCredential.user;
         console.log(user)

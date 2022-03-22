@@ -17,6 +17,10 @@
     margin-bottom: 1em;
     border-bottom: 1px solid #fff;
 }
+
+.prodComment{
+    color: white;
+}
 .productMedia {
     padding: 2.5em 5em 5em 5em;
     color: #fff;

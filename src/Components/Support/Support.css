@@ -38,10 +38,6 @@
     border: 20px solid red;
 }
 
-textarea, .hideButton{
-    display: none;
-}
-   
 .hideButton{
     position: relative;
     top:-2em;

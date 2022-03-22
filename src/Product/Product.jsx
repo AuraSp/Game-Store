@@ -1,10 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Product.css';
+import { ref, set, push,  getDatabase, get, child,  onValue, remove } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
 
 const Product = (props) => {
+
+  let [comment, setComment] = useState("");
+  let [commentData, setCommentData] = useState([])
+  let divComments = []
+
+
   console.log(props)
   let product = props.productInfo
+  console.log(props.user)
 
+  function leaveComment(e){
+    e.preventDefault();
+    if(comment){
+    console.log("test")
+    set((push(ref(props.db, "Comments/"))), {
+          Game: product.name,
+          User: props.user.displayName,
+          Comment: comment
+      });
+      e.target.reset();
+      /* props.completeSubmit(<div className='successMessage'>Question Submitted Succesfully!<BsCheckCircle style={!q ? {} : { color: '#af83318e' }} /></div>) */
+      setComment('');
+    }
+  }
+
+
+  function removeComment(comment){
+    console.log(comment)
+    remove(ref(props.db, 'Comments/' + comment));
+  }
+  
+  function readData(){
+    const dataRef = ref(props.db, 'Comments/');
+    onValue(dataRef, (snapshot) => {
+      const data = snapshot.val();
+      setCommentData(data)
+    });
+  }
+
+  for (const [key, value] of Object.entries(commentData)) {
+    console.log(`${key}: ${value.Comment}`);
+    divComments.push([value.Comment, value.User, value.Game, key])
+
+  }
+
+  useEffect(() => {
+  readData()
+  }, [])
+  
   return (
     <div className='productPage'>
       <span className='prodTitle'>{product.name}</span>
@@ -56,29 +103,18 @@ const Product = (props) => {
           <img src={product.photo4} alt="gamePhoto"></img>
         </div>
       </div>
-
-      {/* <div className='productDesc'>
-        <div className='prodAbout'>
-          <p>{product.about}</p>
-        </div>
-        <div className='productRequirements'>
-          <h5>System requirements</h5>
-          <ul>
-            <li>OS: {product.specs.os}</li>
-            <li>CPU: {product.specs.cpu}</li>
-            <li>GPU: {product.specs.gpu}</li>
-          </ul>
-        </div>
-        <div className='prodTags'>
-          <h5>Tags</h5>
-          <ul>
-            {product.tags.map((tag) => (
-              <li key={tag}>{tag}</li>
-            ))}
-          </ul>
+      <div className='productComments'>
+        {props.user != 0 &&
+        <form onSubmit={(e) =>{leaveComment(e)}}>
+        <textarea className='productComment' name="" onChange={(e)=>{setComment(e.target.value)}} value={comment} id="supportGamesSoftwere2" placeholder='Describe what is wrong and we will reply as soon as possible'></textarea>
+        <button type="submit">Post</button>
+        </form>}
+        <div>
+          {divComments.map((comment)=>(
+            comment[2] == product.name && <div className='prodComment'>{comment[0]}: {comment[1]} : {comment[2]} {comment[1] == props.user.displayName &&<button type="button" onClick={(e)=>{removeComment(comment[3])}}>Remove</button>}</div>
+          ))}
         </div>
       </div>
-      <div className='prodPrice'>Price: {product.price}$ <button className='prodBuyBtn' onClick={(e) => { props.addToCart(product.name) }}>Add to cart</button></div> */}
     </div>
   )
 }
