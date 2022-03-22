@@ -1,21 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.Community-container {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
 .Community-container h1 {
-  text-align: center;
+  text-align: start;
 }
 
 .Community-container {
+  padding: 1em;
   margin: 0 2em;
-  background-color: rgb(94, 185, 185);
 }
 
 .Forum-list {
+  margin: 1em 0;
   display: grid;
   gap: 10px;
-  background-color: aqua;
 }
 
 .Review-list {
   margin: 2em 0;
-  background-color: coral;
   display: flex;
+  flex-direction: column;
   gap: 10px;
+}
+
+.Review-list > * {
+  flex-basis: 100%;
+}
+
+@media (min-width: 40rem) {
+  .Review-list {
+    flex-direction: row;
+  }
 }

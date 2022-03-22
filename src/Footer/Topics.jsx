@@ -10,7 +10,7 @@ export default function Topics({ question, answer }) {
     }
 
     return (
-        <div id='q2'>
+        <div>
             <div className='d-flex flex-row'>
                 <h4 className='w-75'>
                     {question}

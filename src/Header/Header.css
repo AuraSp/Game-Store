@@ -20,7 +20,7 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
-    flex-basis: 60%;
+    flex-basis: 70%;
   }
   
   .store-logo img {
@@ -49,6 +49,15 @@
     border-radius: 15px;
     box-shadow: 0 50px 10px #af83318e inset;
   }
+
+  .left-nav input{
+    width: 15%;
+    padding: 0.5em;
+    border-radius: 15px;
+    border: none;
+    background-color: #cebfa4;
+    margin: 1.2em 0 0 -8em;
+  }
   
   .right-nav {
     /* Headers' second part */
@@ -56,23 +65,11 @@
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: baseline;
-    flex-basis: 40%;
+    flex-basis: 30%;
   }
   
   .regBtns {
     display: inline-flex;
-  }
-  
-  .right-nav input{
-      padding: 2%;
-      width: 50%;
-      background-color: transparent;
-      color: white;
-      border: none;
-      border-bottom: 2px solid white;
-  }
-  .right-nav input::placeholder{
-      color: white;
   }
   .right-nav > ul{
     display: flex;
@@ -102,7 +99,7 @@
     text-decoration: none;
     color: white;
   }
-  
+
   .right-nav .language-menu {
     display: none;
     position: absolute;
@@ -121,6 +118,13 @@
 
 .navBtns{
     display: flex;
+    align-items: center;
+}
+.navBtns > a:nth-child(1){
+  padding-right: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #af8331;
 }
 
 .right-nav ul h3{

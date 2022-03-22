@@ -80,7 +80,9 @@ function App() {
       {page === "community" && <Community />}
       {page == "support" && <Support setPage = {changePage} setUser = {setUser} db={db}/>}
       {page === "cart" && <Cart cart={cart} setCart={setCart}/>}
-      <Footer db={db}/>
+      <Footer 
+      setPage={changePage}
+      db={db}/>
     </div>
   );
 }
