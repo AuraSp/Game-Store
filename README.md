@@ -1,5 +1,5 @@
 # IZPReact (Online-Game-Marketplace)
-3 months SCRUM project
+First 3 months SCRUM project
 
 Contributors (not including me): 
 - Ramūnas https://github.com/RamaLeu
