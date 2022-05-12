@@ -1,4 +1,4 @@
-# IZPReact (Online-Game-Marketplace)
+#  Online-Game-Marketplace
 First 3 months SCRUM project
 
 ## Included:
