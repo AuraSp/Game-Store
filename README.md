@@ -80,14 +80,14 @@ npm -v /or/ npm --version
 ###### *Project*
 ```
 # Clone the project
-git clone https://github.com/AuraSp/I.Z.P.git
+git clone https://github.com/AuraSp/Game-Store.git
 
 # Enter cloned directory
-cd !!!!
+cd Game-Store
 ```
 ###### *Run The Application*
 ```
-1. Inside !!!! directory open VS Code
+1. Inside Game-Store directory open VS Code
 1.1. Open integrated terminal
  - Install needed dependencies for application to work
 npm i /or/ npm install
