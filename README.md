@@ -37,7 +37,7 @@
 </details>
 
 ## About us
-As our goal to make a website, we decided to develop modern game store site that includes many features for try out. Three months project is still under 
+As our goal to make a website, we decided to develop modern game store site that includes many features for try out. This project is still under 
 improvement/modernization to this day.
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
 
