@@ -5,7 +5,7 @@
   <h3 align="center">Online Game Marketplace</h3>
 
   <p align="center">
-    We have build online game store simulation as our SCRUM project
+    Within three months, we have built online game store simulation as our SCRUM project
   </p>
 </div>
 
